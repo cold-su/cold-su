@@ -6,6 +6,8 @@
 
 现在没什么可以说的，往后再讲吧。
 
+🥰喜欢的字体：落霞孤鹜
+
 ## 活动记录
 
 [![Coldsu's favorite icons](https://skillicons.dev/icons?i=windows,powershell,rust,md,sublime,notion,github,git)](https://skillicons.dev)
