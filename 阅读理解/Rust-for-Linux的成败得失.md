@@ -1,4 +1,5 @@
 # [Rust-for-Linux的成败得失](https://www.usenix.org/system/files/atc24-li-hongyu.pdf)
+目录：[单词笔记](#单词笔记) [起读](#起读)
 ## 单词笔记
 - computing 计算机科学
 - foundation 基础
@@ -23,9 +24,31 @@
 - to this end 为此
 - conduct 执行、进行
 - facto 事实上
+- harden 强化
+- emerging 新兴的
+- security 安全性
+- cease 停止
+- eliminate 消除
+- ownership 所有权
+- type checking 类型检查
+- performance 性能
+- ultimately 最终地
+- compromise 妥协
+- unfettered 不受限制的、无拘无束的
+- exploits 利用
+- wild typecasting 任意类型转换
+- raw pointer 野指针
+- construct 构造
+- abstraction 抽象
+- generic frameworks  通用框架
+- encapsulation 封装
+- modularity 模块化
+
 ## 起读
 ### 摘要
 自被开发之时起，30多年了，Linux 已成为当今数字世界的计算基础；从巨大的、复杂的主机（例如超级计算机）到便宜、微小的嵌入式设备（例如物联网），无数应用程序都基于它构建。由于粗浅的内存操作被C语言所允许，从它诞生之日起，这种基础设施就饱受内存和并发错误的困扰。最近的项目 Rust-for-Linux（RFL）有可能一次性解决 Linux 的安全问题——通过将 Rust 的静态所有权和类型检查器融入到内核代码中，内核最终可以摆脱内存和并发错误，而不会损害其性能。然而，尽管它已经逐渐成熟并甚至被合并到 Linux 主线中，然而，RFL 很少被研究，仍然不清楚它是否确实解决了内核的安全性和性能困境。
 
 为此，我们开始进行首次经验主义的、立足于 RFL 的研究，以弄明白其现状和好处，特别是 Rust 如何与 Linux 融合以及这种融合是否能在不增加开销的情况下确保驱动程序的安全性。我们收集并分析了 6 个关键的 RFL 驱动程序，这些驱动程序涉及数百个问题、PR、数千个 Github 提交以及 Linux 邮件列表和 Zulip 上的邮件交流。我们发现，尽管 Rust 减少了内核漏洞，但它无法完全消除它们；更重要的是，如果处理不当，其安全性保证甚至会在运行时开销和开发努力方面给开发者带来巨大的损失。
-### Introduction
+### 引言
+作为当今计算机基础设施的基石，Linux 对于内存并发漏洞的消除从未止步。这些漏洞已经困扰系统软件多年了。虽然有着多年从 Linux 社区中积攒下来的安全强化和工程工作，但漏洞仍是层出不穷的。其中一个根本原因是 C 语言允许给内存对象无拘无束的访问，Linux 反而释放野类型转换和取消引用野指针等以构建复杂的抽象层和通用框架（例如设备驱动），其为的是模块化和性能。
+
