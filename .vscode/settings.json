@@ -48,7 +48,6 @@
     "markdown.preview.fontFamily": "LXGW Wenkai Screen",
     "git.confirmSync": false,
     "editor.lineNumbers": "off",
-    "Codegeex.DisabledFor": {
-        "markdown": true
-    }
+    "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
+    "Codegeex.OnlyKeyControl": true
 }
