@@ -34,3 +34,9 @@ ssh-add ~/.ssh/id_rsa
 在Title中输入一个描述性的标题，在Key中粘贴你的公钥内容。
 
 点击Add SSH key，完成配置。
+
+# 碎语
+
+虽然我差不多已经会配置SSH密钥了（其过程本身也不难懂），但是我没法把SSH密钥配置到ssh-agent上，还是用github-cli吧。
+
+没有Verified标识就没有吧，反正也不是特别重大的问题。
