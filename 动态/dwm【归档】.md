@@ -4,13 +4,13 @@
 >
 > 七月十九日（二〇二四年）
 
+源码在[../Assets/dwm.zip](../Assets/dwm.zip)里面。
+
 # 如何使用？
 
-克隆并安装：
+安装：
 
 ```bash
-git clone https://github.com/PCG0/dwm
-
 cd dwm
 
 make && make clean install
