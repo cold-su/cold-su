@@ -49,5 +49,5 @@
     "git.confirmSync": false,
     "editor.lineNumbers": "off",
     "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
-    "Codegeex.OnlyKeyControl": true
+    "Codegeex.OnlyKeyControl": false
 }
