@@ -43,9 +43,11 @@ python -m venv venv
 
 venv\Scripts\activate.bat
 
-    pip3 --version
+pip3 --version
+# pip 21.2.3 from ...\lib\site-packages\pip (python 3.10)
 
-    pip --version
+pip --version
+# pip 21.2.3 from ...\lib\site-packages\pip (python 3.10)
 ```
 
 Finally, you check the version of the pip3 and pip executables inside your activated virtual environment. Both point to the same pip module, so once your virtual environment is activated, you can use either pip or pip3.
