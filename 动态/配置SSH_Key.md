@@ -40,3 +40,7 @@ ssh-add ~/.ssh/id_rsa
 虽然我差不多已经会配置SSH密钥了（其过程本身也不难懂），但是我没法把SSH密钥配置到ssh-agent上，还是用github-cli吧。
 
 没有Verified标识就没有吧，反正也不是特别重大的问题。
+
+还有一个就是，这个文档里面写的内容是给Linux用的，而我用的是Windows……
+
+Windows配置一些东西确实要比Linux麻烦一点，这点我有所体会。还是留到以后用Linux再配置吧。
