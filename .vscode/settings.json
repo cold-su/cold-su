@@ -5,7 +5,7 @@
     "editor.cursorBlinking": "smooth",
     "editor.mouseWheelZoom": true,
     "files.autoSave": "onFocusChange",
-    "editor.fontFamily": "cascadia code, LXGW WenKai Screen",
+    "editor.fontFamily": "LXGW WenKai Screen",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
