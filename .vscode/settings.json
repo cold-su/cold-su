@@ -45,4 +45,5 @@
     "Codegeex.OnlyKeyControl": true,
     "editor.tabSize": 4,
     "workbench.reduceMotion": "off",
+    "terminal.integrated.fontFamily": "Cascadia Code",
 }
