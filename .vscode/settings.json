@@ -1,6 +1,5 @@
 {
     "workbench.list.smoothScrolling": true,
-    "editor.smoothScrolling ": true,
     "terminal.integrated.smoothScrolling": true,
     "editor.mouseWheelZoom": true,
     "files.autoSave": "onFocusChange",
@@ -9,12 +8,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.ignoredExtensions": [
-        "cweijan.epub-reader",
-        "esbenp.prettier-vscode"
-    ],
     "workbench.editor.editorActionsLocation": "titleBar",
     "workbench.activityBar.location": "bottom",
     "workbench.colorTheme": "GitHub Dark",
