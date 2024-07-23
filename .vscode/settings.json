@@ -1,49 +1,49 @@
 {
     "workbench.list.smoothScrolling": true,
-    "editor.smoothScrolling": true,
+    "editor.smoothScrolling ": true,
     "terminal.integrated.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
     "editor.mouseWheelZoom": true,
     "files.autoSave": "onFocusChange",
-    "editor.fontFamily": "LXGW WenKai Screen",
+    "editor.fontFamily": "霞鹜文楷 屏幕阅读版",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "workbench.editor.editorActionsLocation": "hidden",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [
+        "cweijan.epub-reader",
+        "esbenp.prettier-vscode"
+    ],
+    "workbench.editor.editorActionsLocation": "titleBar",
     "workbench.activityBar.location": "bottom",
     "workbench.colorTheme": "GitHub Dark",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#2b3036",
-        "menu.background": "#2e333b70", //context menu
-        "menu.selectionBackground": "#4247509a", //context menu hover
-        "editorWidget.background": "#51586320", //widget and tooltip
-        "quickInput.background": "#2e333b00", //command center drop down menu
-        "notifications.background": "#29303bd7", //Notification background color.
-    },
     "editor.fontLigatures": true,
     "workbench.editor.showTabs": "single",
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "vscode-great-icons",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "Codegeex.Privacy": false,
-    "editor.fontSize": 19.5,
-    "explorer.confirmPasteNative": false,
-    "Codegeex.Comment.LanguagePreference": "中文",
-    "zenMode.showTabs": "none",
-    "workbench.editorAssociations": {
-        "{git,gitlens}:/**/*.{md,csv,svg}": "default"
-    },
-    "markdown.preview.fontSize": 22,
-    "markdown.preview.fontFamily": "LXGW Wenkai Screen",
     "git.confirmSync": false,
-    "editor.lineNumbers": "on",
-    "Codegeex.CompletionModel": "CodeGeeX Pro[Beta]",
-    "Codegeex.OnlyKeyControl": true,
-    "editor.tabSize": 4,
-    "workbench.reduceMotion": "off",
+    "editor.fontSize": 19.5,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.commandCenter": false,
+    "projectManager.git.baseFolders": [
+        "C:\\Users\\-home-\\Documents\\GitHub",
+        "C:\\Users\\-home-\\AppData\\Local\\nvim"
+    ],
     "terminal.integrated.fontFamily": "Cascadia Code",
+    "git.autofetch": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.lineNumbers": "relative",
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": true,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "nesterenok.js-beautify-extentions"
+    },
+    "explorer.confirmDelete": false,
+    "editor.cursorBlinking": "solid",
+    "markdown.preview.fontSize": 22,
+    "markdown.preview.fontFamily": "霞鹜文楷 屏幕阅读版",
 }
