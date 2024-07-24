@@ -1,6 +1,7 @@
 # 如何配置SSH密钥
 
 ## 1. 生成SSH密钥
+
 在终端输入以下命令：
 
 ```bash
@@ -35,7 +36,7 @@ ssh-add ~/.ssh/id_rsa
 
 点击Add SSH key，完成配置。
 
-# 碎语
+## 碎语
 
 虽然我差不多已经会配置SSH密钥了（其过程本身也不难懂），但是我没法把SSH密钥配置到ssh-agent上，还是用github-cli吧。
 

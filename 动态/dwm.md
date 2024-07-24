@@ -1,3 +1,5 @@
+# 我的dwm
+>
 > [!WARNING]
 >
 > 本文档现已被归档。
@@ -6,7 +8,7 @@
 
 源码在[../Assets/dwm.zip](../Assets/dwm.zip)里面。
 
-# 如何使用？
+## 如何使用？
 
 安装：
 
@@ -36,17 +38,17 @@ exec xterm -geometry 80x66+0+0 -name login
 
 那么删掉他们。
 
-# 题外话
+## 题外话
 
-## Picom
+### Picom
 
-### 什么是 Picom
+#### 什么是 Picom
 
 Picom 可以让 Linux 拥有丝滑的动画体验。
 
-### 如何使用？
+#### 如何使用
 
-**先确保安装有 Picom**
+先确保安装有 Picom
 
 同样在 `~/.xinitrc` 中，在 `exec dwm` 的上方添加 `picom -b`
 
@@ -58,7 +60,7 @@ picom -b
 exec dwm
 ```
 
-## clash
+### clash
 
 与上同理，闲话少说：
 

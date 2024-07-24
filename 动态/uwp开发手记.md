@@ -1,45 +1,50 @@
+# UWP开发手记
+>
 > [!WARNING]
 >
 > 本文档现已被归档。
 >
 > 七月十九日（二〇二四年）
-
-# UWP开发手记
-
 >真正的菜鸡会把自己会的东西全部展现出来撑门面，而不是躲在后面自谦
 
 我正在使用此[教程](https://space.bilibili.com/18340402/channel/seriesdetail?sid=1276538&ctype=0)
+
 ## Learning
+
 ### Learning Days 01 - 2022.01.25
-**绝赞摸鱼中**
+
+绝赞摸鱼中
 
 ### Learning Days 02 - 2022.01.26
 
 ```xml
 <StackPanel><!--侧边栏-->
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-    	<Button Name="Sidebar" Width="40" Height="40" />
-	</StackPanel>
+     <Button Name="Sidebar" Width="40" Height="40" />
+ </StackPanel>
 </StackPanel>
 ```
+
 ```cs
 private void Sidebar_Show(object sender, RoutedEventArgs e)
         {
             //侧边栏开启
         }
 ```
+
 侧边栏搁置了.
 ***
-
 
 ```xml
 <Button Content="Save"/>
 <TextBlock Text="Save"/>
 ```
+
 需要记住的是,Butoon跟TextBlock的文本显示的子属性是不同的(之前我老是给Button用Text="")
 ***
 
-**Object 1 - 登录界面**
+Object 1 - 登录界面
+
 ```xml
 <Page
     x:Class="App1.MainPage"
@@ -76,12 +81,11 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
     </Grid>
 </Page>
 ```
+
 我看完了教程11,然后上手做了,做完后看答案才发现我完全没有用Grid来做. 于是偷瞄了几眼答案,把这个作业做出来了(某种意义上也算完成吧.)
 
----
+Object 2 - "传说级"布局方案
 
-
-**Object 2 - "传说级"布局方案**
 ```xml
 <Page
     x:Class="App1.MainPage"
@@ -113,14 +117,12 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
     </StackPanel>
 </Page>
 ```
-我独立思考了许久,最后还是啃了点以前的教程,才做出来. 
+
+我独立思考了许久,最后还是啃了点以前的教程,才做出来.
 在 `<StackPanel Orientation="Horizontal">` 下套一个 `<StackPanel Orientation="Vertical">` 就可以做出两个 StackPanel 横列相并的效果了.
 
+Objects 3 - 段落式
 
-### Learning Days 02 - 2022.01.26
-
-
-**Objects 3 - 段落式**
 ```xml
 <Grid Width="500" HorizontalAlignment="Left">
             <Grid.RowDefinitions>
@@ -141,9 +143,11 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
             </StackPanel>
         </Grid>
 ```
+
 一个模板. 觉得以后可能会有用就存下来了.
 
-**Objects 4 - 复杂式布局**
+Objects 4 - 复杂式布局
+
 ```xml
 <Page
     x:Class="App1.MainPage"
@@ -261,18 +265,22 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
 </Page>
 
 ```
+
 完全放弃(悲)
-最终还是看答案才茅塞顿开(我先前都不知道Stackpanel还能 `Grid.Row` 或 `Grid.Column` ...) 
+最终还是看答案才茅塞顿开(我先前都不知道Stackpanel还能 `Grid.Row` 或 `Grid.Column` ...)
 在完成这副作品后,我发现我的例文字数太多了,窗口装不下,于是便学习了一个新功能:滚动条
+
 ```xml
 <ScrollViewer VerticalScrollBarVisibility="Auto">
     <!--在滚动条中的内容-->
 </ScrollViewer>
 ```
+
 这几天的高强度码字整得我眼睛非常疲劳,且伴着点轻微疼痛. 不过我现在已经觉得视力什么的无所谓了(我现在已经500多度了).
 ***
 
-**Objects 5- 自制搜索栏**
+Objects 5- 自制搜索栏
+
 ```xml
 <Page
     x:Class="App1.MainPage"
@@ -300,8 +308,8 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
     </Grid>
 </Page>
 ```
-`<RelativePanel MinWidth="" MinHeight="">` 下,在元素中添加 `RelativePanel.AlignRightWithPanel="True"` 就可以将元素固定在左侧,可以伸缩,宽最小值是MinWidth,高最小值是MinHeight.
 
+`<RelativePanel MinWidth="" MinHeight="">` 下,在元素中添加 `RelativePanel.AlignRightWithPanel="True"` 就可以将元素固定在左侧,可以伸缩,宽最小值是MinWidth,高最小值是MinHeight.
 
 ```xml
 <Page
@@ -340,7 +348,8 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
 
 ### Learning Days 03 - 2022.01.27
 
-**Objects 4.2 - 复杂式布局 + 侧边栏**
+Objects 4.2 - 复杂式布局 + 侧边栏
+
 ```xml
 <Page
     x:Class="App1.MainPage"
@@ -475,6 +484,7 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
     </Grid>
 </Page>
 ```
+
 ```xml
 <SplitView><!--Name="" DisplayMode="" CompactPaneLength="" OpenPanelLength""-->
     
@@ -489,9 +499,9 @@ private void Sidebar_Show(object sender, RoutedEventArgs e)
     </SplitView.Content>
 </SplitView>            
 ```
+
 画面效果我非常满意,有点uwp应用的模样了,可惜的是我不知道怎么把侧边栏固定. 以后再回头做.
 还有一个不足的是,打开侧边栏时,它总是从左侧弹出,但我想要的侧边栏是在右边的,费了许些心思,最后放弃了,今晚再查资料. *2022.01.28后记:那天晚上没查,而是娱乐去了,适之啊适之.*
-
 
 ### Learning Days 04 - 2022.01.28
 
@@ -500,6 +510,7 @@ C# `MainFrame.Navigate(typeof(PageName));`
 可以实现页面间的跳转,我一般配合Grid用.
 
 ### Learning Days 05 - 2022.01.30
+
 **巨大阻碍Websocket**
 许久未见，我也在好奇 Day5 去哪了。
 
@@ -511,10 +522,10 @@ C# `MainFrame.Navigate(typeof(PageName));`
 
 我一直邯郸学步地、毫无耐心地想要跨过去，想要一步登天，这怎么行？
 
-
-
 ## 碎语
-### Hello World!
+
+### Hello World
+
 这是这里的第一篇文章。
 
 之前新学的一个词，博客，就是这个。我身边很多人都在搭。我想搭，但不会，纵使搭好了，也可能半途而废。
@@ -528,9 +539,6 @@ C# `MainFrame.Navigate(typeof(PageName));`
 回过神来……离上学还有两周时间，一想到寒假作业，我头便发昏，我总该抽点时间来处理处理他们了。
 
 2022.01.27 - 20222.01.28
-
-
-
 
 ## 碎碎念
 
