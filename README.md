@@ -36,7 +36,7 @@ Click->[GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 
 -->
 
-# ![Ranking](https://github-readme-stats.vercel.app/api?username=cold-su&show_icons=true)
+# ![Ranking](https://github-readme-stats.vercel.app/api?username=cold-su&show_icons=true&theme=nord&count_private=true)[![Coldsu's favorite icons](https://skillicons.dev/icons?i=windows,md,vscode,neovim,git)](https://skillicons.dev)
 
 ```rust
 enum Proj {
