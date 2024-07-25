@@ -4,7 +4,6 @@
 
 - [开始使用](#开始使用)
   - [下载](#下载)
-- [生词](#生词)
 - [外链](#外链)
   - [在虚拟环境里面用pip](#在虚拟环境里面用pip)
 
@@ -21,13 +20,6 @@ Material for MkDocs有Python包，可以用pip来下载，最好是用虚拟环�
 ```bash
 pip install mkdocs-material
 ```
-
-## 生词
-
-- framwork 框架
-- at large 全体的
-
-todo：
 
 ## 外链
 
