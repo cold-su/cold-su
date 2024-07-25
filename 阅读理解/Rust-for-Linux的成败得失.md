@@ -26,6 +26,7 @@
 
 ## 单词笔记
 
+- compatible 兼容的
 - delay 延迟、（航班）延误
 - unpredictable 不可预测的
 - interrupted 中断

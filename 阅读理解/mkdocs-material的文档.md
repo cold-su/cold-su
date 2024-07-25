@@ -21,7 +21,9 @@ Material for MkDocs 有Python 包，可以用 pip 来下载，最好是用虚拟
 pip install mkdocs-material
 ```
 
-This will automatically install compatible versions of all dependencies: MkDocs, Markdown, Pygments and Python Markdown Extensions. Material for MkDocs always strives to support the latest versions, so there's no need to install those packages separately.
+这会自动下载兼容的依赖包 MkDocs, Markdown, Pygments 和 Python Markdown Extensions，共四个。
+
+Material for MkDocs always strives to support the latest versions, so there's no need to install those packages separately.
 
 看个[Youtube视频](https://www.youtube.com/watch?v=Q-YA_dA8C20)，手把手教你如何用 MkDocs-Material 舞一个文档网站到 GitHub Pages 上。
 
