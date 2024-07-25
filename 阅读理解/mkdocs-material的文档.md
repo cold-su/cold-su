@@ -29,13 +29,13 @@ pip install mkdocs-material
 
 用虚拟环境有三个好处:
 
-一则，确保手头上的项目的Python的版本正确。
+一则，手头上的项目的Python的版本是正确的。
 
-二则，Be confident that you’re referring to the correct pip instance when running pip or pip3
+二则，运行pip或pip3时，指的是正确的实例。
 
 三则，在不影响其他项目的情况下，给项目用一个特定的包。
 
-Python 3 has the built-in venv module for creating virtual environments. This module helps you create virtual environments with an isolated Python installation. Once you’ve activated the virtual environment, then you can install packages into this environment. The packages that you install into one virtual environment are isolated from all other environments on your system.
+Python3有用来创建虚拟环境的内建模块。这个模块会以下载一个独立的Python的方式来创建虚拟环境。虚拟环境被激活后，就可以下载Python包到环境里面了。虚拟环境里的Python包跟系统下其他环境的包是互相独立的。
 
 You can follow these steps to create a virtual environment and verify that you’re using the pip module inside the newly created environment:
 
@@ -53,4 +53,4 @@ pip --version
 # pip 21.2.3 from ...\lib\site-packages\pip (python 3.10)
 ```
 
-Finally, you check the version of the pip3 and pip executables inside your activated virtual environment. Both point to the same pip module, so once your virtual environment is activated, you can use either pip or pip3.
+最后，可以确认一下虚拟环境里的pip和pip3的版本。二者都指向同一个pip模块，因此虚拟环境被激活后，pip和pip3都是可用的。
