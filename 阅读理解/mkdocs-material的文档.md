@@ -21,14 +21,20 @@ Material for MkDocs 有Python 包，可以用 pip 来下载，最好是用虚拟
 pip install mkdocs-material
 ```
 
-这会自动下载兼容的依赖包 MkDocs, Markdown, Pygments 和 Python Markdown Extensions，共四个。
+这会自动下载兼容的依赖包 MkDocs, Markdown, Pygments 和 Python Markdown Extensions，共四个。本项目一直都有在维护，因此不用分别下载这些软件包的最新版。
 
-Material for MkDocs always strives to support the latest versions, so there's no need to install those packages separately.
-
-看个[Youtube视频](https://www.youtube.com/watch?v=Q-YA_dA8C20)，手把手教你如何用 MkDocs-Material 舞一个文档网站到 GitHub Pages 上。
+看个[Youtube视频](https://www.youtube.com/watch?v=Q-YA_dA8C20)，手把手教你如何用 MkDocs-Material 搞一个文档网站到 GitHub Pages 上。
 
 > ![NOTES]
-> If you don't have prior experience with Python, we recommend reading Using Python's pip to Manage Your Projects' Dependencies, which is a really good introduction on the mechanics of Python package management and helps you troubleshoot if you run into errors.
+> 如果你还是个Python萌新的话，我们建议你读一读《用 Python 的 pip 来管理你的项目的依赖》，它是个非常好的、对Python软件包的管理机制的说明。若遇报错，它可以帮到你许多。
+
+#### docker
+
+The official Docker image is a great way to get up and running in a few minutes, as it comes with all dependencies pre-installed. Open up a terminal and pull the image with:
+
+```bash
+docker pull squidfunk/mkdocs-material
+```
 
 ## 外链
 
