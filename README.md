@@ -68,6 +68,7 @@ fn main() {
     Proj::behavir(Proj::Coding(true));
     Proj::what_is_the_proj_condition();
     Proj::what_time_is_now();
+    // One step CLOSER!
     loop_life();
 }
 ```
