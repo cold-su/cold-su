@@ -1,14 +1,3 @@
-# F&P（python的小游戏）
->
-> [!WARNING]
->
-> 预测是二〇二二年的文件，由于这里没有明确提及时间信息，也无从考证了。
->
-> 本文档现已被归档。
->
-> 七月十九日（二〇二四年）
-
-```python
 import datetime
 import sys
 from typing import List
@@ -45,7 +34,18 @@ def Save_player():#存档保存
         )
         file.close()
 def Load_player():#存档加载
-    global playerpos1,playerpos0,day,time,zip_beta,p,box_kou_size_1,box_kou_size_2,hand_1,box_kou_size_3,box_kou_size_4,box_kou_p
+    global playerpos1
+        , playerpos0
+        , day
+        , time
+        , zip_beta
+        , p
+        , box_kou_size_1
+        , box_kou_size_2
+        , hand_1
+        , box_kou_size_3
+        , box_kou_size_4
+        , box_kou_p
     try:
         with open(desktop_path+file_name,"r") as file:
             sl = file.readlines()
@@ -99,7 +99,9 @@ class TimeThread(threading.Thread):#时间流逝
                 time = 0
 class boxKou(threading.Thread):
     def run(self):
-        global box_kou_size_1,box_kou_size_2,hand_1
+        global box_kou_size_1
+            , box_kou_size_2
+            , hand_1
         hand_1 = box_kou
         while True:
             if not box_kou_p:
@@ -108,7 +110,9 @@ class boxKou(threading.Thread):
             sleep(0.001)
 class boxKou_2(threading.Thread):
     def run(self):
-        global box_kou_size_3,box_kou_size_4,hand_1
+        global box_kou_size_3
+            , box_kou_size_4
+            , hand_1
         hand_1 = box_kou_2
         while True:
             if not box_kou_p:
@@ -338,4 +342,3 @@ while running:
         playerpos1 = height - (height - height + 2)
     elif playerpos1 <= 0:
         playerpos1 = 0
-```
