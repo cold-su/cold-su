@@ -1,23 +1,25 @@
 import datetime
-import sys
-from typing import List
 import pygame
 from pygame.locals import *
 from collections import deque
 from tkinter import *
-import tkinter as tk
 from random import choice
 from time import sleep
 import threading
 import os
-import ctypes
-import inspect
-#import numpy as np
 
 desktop_path = './FandP/'
 file_name = 'save.faps'
 log_name = 'log.txt'
 chapter_1_name = 'Chapter 1'
+
+if __name__ == '__main__':
+    try:
+        open(desktop_path+file_name,"r")
+    except:
+        os.mkdir(desktop_path)
+        open(desktop_path+file_name, "w")
+
 def Save_player():#存档保存
     with open(desktop_path+file_name, "w") as file:
         file.write(
@@ -25,7 +27,7 @@ def Save_player():#存档保存
             str(playerpos1)+"\n"+#玩家的y轴坐标
             str(day)+"\n"+#存活天数（days）
             str(time)+"\n"+#当前时间（times）
-            str(hand_1)+"\n"+
+            # str(hand_1)+"\n"+
             str(box_kou_p)+"\n"+
             str(box_kou_size_1)+"\n"+
             str(box_kou_size_2)+"\n"+
@@ -34,18 +36,7 @@ def Save_player():#存档保存
         )
         file.close()
 def Load_player():#存档加载
-    global playerpos1
-        , playerpos0
-        , day
-        , time
-        , zip_beta
-        , p
-        , box_kou_size_1
-        , box_kou_size_2
-        , hand_1
-        , box_kou_size_3
-        , box_kou_size_4
-        , box_kou_p
+    global playerpos1, playerpos0, day, time, zip_beta, p, box_kou_size_1, box_kou_size_2, hand_1, box_kou_size_3, box_kou_size_4, box_kou_p
     try:
         with open(desktop_path+file_name,"r") as file:
             sl = file.readlines()
@@ -68,14 +59,14 @@ def Load_player():#存档加载
         Save_player()
         with open(desktop_path+log_name, "w") as file:
             file.write(log)
-        os.mkdir(desktop_path + 'Chapter 1')
+        # os.mkdir(desktop_path + 'Chapter 1')
 
 #更新日志
 log = '''
 v1.0.2
 时间；自动保存；
 v1.0.3
-拾取物品系统优化；自动保存间隔 15 -> 10；
+拾取物品系统优化；自动保存间隔 15 -> 10
 '''
 
 class NpcWork():
@@ -99,9 +90,7 @@ class TimeThread(threading.Thread):#时间流逝
                 time = 0
 class boxKou(threading.Thread):
     def run(self):
-        global box_kou_size_1
-            , box_kou_size_2
-            , hand_1
+        global box_kou_size_1, box_kou_size_2, hand_1
         hand_1 = box_kou
         while True:
             if not box_kou_p:
@@ -110,9 +99,7 @@ class boxKou(threading.Thread):
             sleep(0.001)
 class boxKou_2(threading.Thread):
     def run(self):
-        global box_kou_size_3
-            , box_kou_size_4
-            , hand_1
+        global box_kou_size_3, box_kou_size_4, hand_1
         hand_1 = box_kou_2
         while True:
             if not box_kou_p:
@@ -133,7 +120,7 @@ FPS = 30
 width,height = 900,600
 pygame.mixer.init()
 screen = pygame.display.set_mode((width,height))
-title = [' ','  ~  今天也是好天气']
+title = [' ','  ~  今天就是好']
 pygame.display.set_caption("F和P的苹果园" + choice(title))
 clock = pygame.time.Clock()
 
@@ -207,6 +194,7 @@ TimeThread().start()
 SaveTime().start()
 #make_zip()
 box_kou_p = False
+
 while running:
     #print(playerpos0,playerpos1)
 
