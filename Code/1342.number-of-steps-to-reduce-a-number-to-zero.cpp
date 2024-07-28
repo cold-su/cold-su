@@ -6,19 +6,18 @@
 
 // @lc code=start
 class Solution {
-public:
-  int numberOfSteps(int num) {
-    int steps = 0;
-    while (num != 0) {
-      if (num % 2 != 0) {
-        num -= 1;
-        steps += 1;
-      } else {
-        num = num / 2;
-        steps += 1;
-      }
+   public:
+    int numberOfSteps(int num) {
+        int steps = 0;
+        while (num != 0) {
+            if (num % 2 != 0) {
+                num--;
+            } else {
+                num >>= 1;  // @also num /= 2;
+            }
+            steps++;
+        }
+        return steps;
     }
-    return steps;
-  }
 };
 // @lc code=end
