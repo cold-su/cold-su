@@ -7,7 +7,7 @@
 ## 专有名词
 
 - [ ] 堆排序
-  - [ ] [排序算法：堆排序【图解+代码】](https://www.bilibili.com/video/BV1fp4y1D7cj/)
+  - [x] [排序算法：堆排序【图解+代码】](https://www.bilibili.com/video/BV1fp4y1D7cj/)
 - [ ] 杜教筛
 - [ ] 完全背包
 - [ ] 基数排序
