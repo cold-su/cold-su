@@ -6,10 +6,7 @@
 
 手机版的那个git插件中，要github token才能登陆得上，输入密码是不行的。我的解决方式是输入邮箱然后输入生成的token。
 
-token在 settings/token处生成。
+下载git插件之后到设置里面填邮箱账号，然后到github生成token就好了。github网址+{USERNAME}/settings/tokens，即可跳转到生成token的页面。
 
 貌似还是会有一些问题，比如手机版很卡。不知道是不是偶然原因。
 
-过会再写个配置过程吧。
-
-#TODO
