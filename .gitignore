@@ -1,3 +1,5 @@
 .vscode
-
 .obsidian
+
+*.zip
+*.7z
