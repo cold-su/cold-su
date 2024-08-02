@@ -1,8 +1,14 @@
 class Solution {
-public:
+   public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        for(int i=0; i<nums.size(); i++){
-            for(int j)
-        }
+        
     }
 };
+
+
+//         unordered_map<int, int> m;
+//         for (auto& i : nums)
+//             m[i]++;
+//         vector<vector<int>> bucket(nums.size() + 1);
+//         for (auto& [key, val] : m)
+//             bucket[val].push_back(key);
