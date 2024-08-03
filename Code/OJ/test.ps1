@@ -1,3 +1,4 @@
 clang++ '.\a.cpp';
-Get-Content .\input.txt | .\a.exe > .\output.txt;
-gc .\output.txt
+gc .in | .\a.exe > .out;
+gc .out
+# gc is also Get-Content
