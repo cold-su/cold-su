@@ -19,10 +19,6 @@ class Solution {
                 }
             }
         }
-        // @note
-        // for (auto prev : heights) {
-        //     std::cout << prev;
-        // }
         int counter = 0;
         for (int i = 0; i < checker.size(); i++) {
             if (checker[i] != heights[i]) {

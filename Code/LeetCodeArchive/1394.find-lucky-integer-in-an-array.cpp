@@ -12,7 +12,7 @@ public:
         for(int i=0; i<arr.size(); i++){
             m[arr[i]]++;
         }
-        int max=-1;
+        int max= -1;
         for(auto [key, val]:m){
             if(key==val && key>max){
                 max=key;

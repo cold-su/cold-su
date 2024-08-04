@@ -15,18 +15,6 @@ public:
         for(int i=0; i<a.size(); i++)
             if(a[i]!=b[i]) return false;
         return true;
-        // for(auto prev:terr){
-        //     std::cout<<prev<<" ";
-        // }
-        // int a= *max_element(arr.begin(),arr.end()),
-        //     b= *max_element(target.begin(),target.end());
-        // for(int i=0; i<terr.size(); i++){
-        //     if(terr[i]%2!=0 && terr[i]!=0){
-        //         // std::cout<<terr[i];
-        //         return false;
-        //     }
-        // }
-        // return true;
     }
 };
 // @lc code=end
