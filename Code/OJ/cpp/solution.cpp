@@ -6,15 +6,11 @@ void solve(){
 
 }
 
-void addl(int index, int[] array){
-    
-}
-
 int main(){
     int t;
     std::cin>>t;
     while(t-->0){
-        solve()
+        solve();
     }
     return 0;
 }
