@@ -10,10 +10,10 @@
 ### 计数
 
 - CF 2
-- LC 36
+- LC 37
 - LG 4
 - HO 1
-- Total 43
+- Total 44
 
 CF: Codeforces, 
 LC: LeetCode, 

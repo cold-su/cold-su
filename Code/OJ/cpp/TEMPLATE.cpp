@@ -1,25 +1,33 @@
-#include <iostream>
 #include <algorithm>
-#include <vector>
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 #include <cstring>
+#include <iostream>
+#include <vector>
 
-void read(std::vector<int> array){
-    for(auto prev:array){
-        std::cout<<prev<<" ";
-    }
-    std::cout<<"\n";
-}
-
-void solve(){
-    
-}
-
-int main(){
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(0);
+#define endl "\n"
+#define end " "
+#define IOS                           \
+    std::ios::sync_with_stdio(false); \
+    std::cin.tie(0);                  \
     std::cout.tie(0);
-    
+
+void read(std::vector<int> array) {
+    for (auto prev : array) {
+        std::cout << prev << " ";
+    }
+    std::cout << endl;
+}
+
+void solve() {
+}
+
+int main() {
+    IOS;
+    int n;
+    std::cin >> n;
+    while (n-- > 0) {
+        solve();
+    }
     return 0;
 }
