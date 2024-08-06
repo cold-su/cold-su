@@ -11,6 +11,7 @@
     std::ios::sync_with_stdio(false); \
     std::cin.tie(0);                  \
     std::cout.tie(0);
+#define INF 1e9 + 7
 
 void read(std::vector<int> array) {
     for (auto prev : array) {

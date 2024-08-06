@@ -9,11 +9,11 @@
 
 ### 计数
 
-- CF 2
+- CF 3
 - LC 37
 - LG 4
 - HO 1
-- Total 44
+- Total 45
 
 CF: Codeforces, 
 LC: LeetCode, 
@@ -22,7 +22,7 @@ HO: HydroOJ
 
 ## 专有名词
 
-- [ ] 计数排序
+- [x] 计数排序
 - [ ] 堆排序
   - [x] [排序算法：堆排序【图解+代码】](https://www.bilibili.com/video/BV1fp4y1D7cj/)
  这个视频我姑且算是看完了，可是我依然没有写得出堆排序，而且也过不了题，不知为何。
