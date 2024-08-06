@@ -1,8 +1,24 @@
 # 日程
 
-## LeetCode
+## Competitive Programming
 
-- [ ] [1395. Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/description/?envType=daily-question&envId=2024-07-29)
+- [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
+- [LibreOJ题库](https://loj.ac/p)
+- [CodeForces题集](https://codeforces.com/problemset)
+- [HydroOJ题集](https://hydro.ac/p)
+
+### 计数
+
+- CF 2
+- LC 36
+- LG 4
+- HO 1
+- Total 43
+
+CF: Codeforces, 
+LC: LeetCode, 
+LG: Luogu, 
+HO: HydroOJ
 
 ## 专有名词
 
