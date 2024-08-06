@@ -15,7 +15,7 @@
 
 void read(std::vector<int> array) {
     for (auto prev : array) {
-        std::cout << prev << " ";
+        std::cout << prev << end;
     }
     std::cout << endl;
 }
@@ -25,9 +25,9 @@ void solve() {
 
 int main() {
     IOS;
-    int n;
-    std::cin >> n;
-    while (n-- > 0) {
+    int tc;
+    std::cin >> tc;
+    while (tc-- > 0) {
         solve();
     }
     return 0;
