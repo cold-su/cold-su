@@ -13,7 +13,9 @@
     std::cout.tie(0);
 #define INF 1e9 + 7
 
-void read(std::vector<int> array) {
+using namespace std;
+
+void read(vector<int> array) {
     for (auto prev : array) {
         std::cout << prev << end;
     }
