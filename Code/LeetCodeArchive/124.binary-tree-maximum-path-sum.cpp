@@ -13,18 +13,19 @@
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left),
+ * right(right) {}
  * };
  */
 class Solution {
    public:
+    int ans = INT_MIN;
     int maxPathSum(TreeNode* root) {
-        int ans = INT_MIN;
         pathSum(root);
         return ans;
     }
     int pathSum(TreeNode* root) {
-        if (!root) {
+        if (root == nullptr) {
             return 0;
         }
         int left = max(pathSum(root->left), 0);
