@@ -6,44 +6,23 @@
 
 // @lc code=start
 class Solution {
-public:
+   public:
     int numTeams(vector<int>& rating) {
-        int c=0;
-        kloop(rating, c);
-        reverse(rating.begin(), rating.end());
-        kloop(rating, c);
-        return c;
-    }
-
-    // void read(vector<int> array){
-    //     for(auto prev:array){
-    //         std::cout<<prev<<" ";
-    //     }
-    //     std::cout<<"\n";
-    // }
-
-    void kloop(vector<int> array, int& counter){
-        for(int i=0; i<array.size()-2; i++){
-            // if(array[i]>array[i+1]) continue;
-            for(int j=i+1; j<array.size()-1; j++){
-                if(array[j]>array[i]){
-                    solve(j, array, 0, counter);
+        int res = 0;
+        for (int i = 1; i < rating.size() - 1; ++i) {
+            int less[2] = {};
+            int greater[2] = {};
+            for (int j = 0; j < rating.size(); ++j) {
+                if (rating[i] < rating[j]) {
+                    ++less[j > i];
                 }
-                else continue;
+                if (rating[i] > rating[j]) {
+                    ++greater[j > i];
+                }
             }
+            res += less[0] * greater[1] + greater[0] * less[1];
         }
-    }
-    
-    void solve(int right, vector<int> array, int index, int& counter){
-        sort(array.begin()+right+1, array.end()-index);
-        int max= *max_element(array.begin()+right, array.end()-index);
-        if(max>array[right]){
-            index++;
-            counter++;
-            solve(right, array, index, counter);
-        }
-        else return;
+        return res;
     }
 };
 // @lc code=end
-
