@@ -9,7 +9,7 @@ class Solution {
    public:
     int ans = 0;
     int numMagicSquaresInside(vector<vector<int>>& grid) {
-        if (grid[0].size() < 3) {
+        if (grid[0].size() < 2) {
             return 0;
         }
         vector<vector<int>> dp(grid[0].size(), vector<int>(grid[0].size(), 0));

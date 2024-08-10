@@ -1,12 +1,5 @@
-#include <algorithm>
-#include <cmath>
-#include <cstdio>
-#include <cstring>
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 #define endl "\n"
-#define end " "
 #define IOS                           \
     std::ios::sync_with_stdio(false); \
     std::cin.tie(0);                  \
@@ -14,23 +7,20 @@
 #define INF 1e9 + 7
 
 using namespace std;
-
-void read(vector<int> array) {
-    for (auto prev : array) {
-        std::cout << prev << end;
-    }
-    std::cout << endl;
-}
-
-void solve() {
-}
-
 int main() {
     IOS;
-    int tc;
-    std::cin >> tc;
-    while (tc-- > 0) {
-        solve();
+    int t;
+    std::cin >> t;
+    std::map<int, int> Map;
+    std::map<int, int>::iterator it;
+    for (int i = 0; i < t; i++) {
+        Map[i]++;
+    }
+    for (it = Map.begin(); it != Map.end(); it++) {
+        std::cout << it->first << " " << it->second << endl;
+    }
+    for (auto [key, val] : Map) {
+        std::cout << key << " " << val << endl;
     }
     return 0;
 }
