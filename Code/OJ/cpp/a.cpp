@@ -22,5 +22,6 @@ int main() {
     for (auto [key, val] : Map) {
         std::cout << key << " " << val << endl;
     }
+    auto n = find();
     return 0;
 }
