@@ -9,19 +9,13 @@
 using namespace std;
 int main() {
     IOS;
-    int t;
-    std::cin >> t;
-    std::map<int, int> Map;
-    std::map<int, int>::iterator it;
-    for (int i = 0; i < t; i++) {
-        Map[i]++;
-    }
-    for (it = Map.begin(); it != Map.end(); it++) {
-        std::cout << it->first << " " << it->second << endl;
-    }
-    for (auto [key, val] : Map) {
-        std::cout << key << " " << val << endl;
-    }
-    auto n = find();
+
+    string a = "1471";
+    auto b = '5';
+    auto c = '8';
+    string temp;
+    temp.push_back(b);
+    temp.push_back(c);
+    std::cout << temp;
     return 0;
 }
