@@ -8,15 +8,15 @@
 class Solution {
    public:
     vector<int> plusOne(vector<int>& digits) {
-        vector<int> arr(digits.size() + 1);
+        vector<int> array(digits.size() + 1);
         for (int i = 0; i < digits.size(); i++) {
-            arr[i + 1] = digits[i];
+            array[i + 1] = digits[i];
         }
-        solve(arr.size() - 1, arr);
-        if (arr[0] == 0) {
-            arr.erase(std::find(arr.begin(), arr.begin() + 1, 0));
+        solve(array.size() - 1, array);
+        if (array[0] == 0) {
+            array.erase(std::find(array.begin(), array.begin() + 1, 0));
         }
-        return arr;
+        return array;
     }
     void solve(int index, vector<int>& digits) {
         if (digits[index] < 9) {

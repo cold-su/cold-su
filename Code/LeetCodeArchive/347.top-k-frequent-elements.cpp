@@ -5,31 +5,50 @@
  */
 
 // @lc code=start
+const static auto initialize = [] {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
+
 class Solution {
-public:
+   public:
+    vector<int> answer;
+    map<int, int> map;
+    vector<int> array;
+
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        map<int,int> u;
-        for(auto j:nums){
-            u[j]++;
+        for (auto i : nums) {
+            map[i]++;
         }
-        vector<int> arr;
-        for(auto [key,val]:u){
-            arr.push_back(val);
+        for (auto it = map.begin(); it != map.end(); it++) {
+            array.push_back(it->second);
         }
-        sort(arr.begin(),arr.end(),greater<int>());
-        int outdex=0,bak=k-1;
-        vector<int> ret;
-        while(k-->0){
-            if(outdex>bak==true) break;
-            for(auto [key,val]:u){
-                if(outdex>bak==true) break;
-                if(val==arr[outdex]){
-                    ret.push_back(key);
-                    outdex++;
-                }
+        std::sort(array.begin(), array.end(), greater<int>());
+        Solution::solve(k);
+        return answer;
+    }
+
+   private:
+    void solve(int& k) {
+        int index = 0;
+        int bak = k - 1;
+        while (k-- > 0 || !(index > bak)) {
+            __solve(index, bak);
+        }
+    }
+
+    void __solve(int& index, int& bak) {
+        for (auto it = map.begin(); it != map.end(); it++) {
+            if (index > bak == true) {
+                break;
+            }
+            if (it->second == array[index]) {
+                answer.push_back(it->first);
+                index++;
             }
         }
-        return ret;
     }
 };
 // @lc code=end
