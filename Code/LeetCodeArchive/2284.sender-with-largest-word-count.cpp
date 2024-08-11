@@ -34,7 +34,7 @@ class Solution {
                 ans.push_back(it->first);
             }
         }
-        std::sort(ans.rbegin(), ans.rend());  // TODO
+        std::sort(ans.rbegin(), ans.rend());
         return ans[0];
     }
     int count(string target) {
