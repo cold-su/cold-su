@@ -15,13 +15,13 @@ const static auto initialize = [] {
 }();
 
 class Solution {
-   public:  // TODO
+   public:
     vector<long long> minOperations(vector<int>& nums, vector<int>& queries) {
         vector<long long> ans;
         for (int i = 0; i < queries.size(); ++i) {
             long long curr = 0;
             int target = queries[i];
-            // FIXME TLE
+            // TODO
             for (int prev : nums) {
                 curr += abs(prev - target);
             }

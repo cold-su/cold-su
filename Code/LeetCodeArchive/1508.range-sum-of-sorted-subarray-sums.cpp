@@ -6,14 +6,14 @@
 
 // @lc code=start
 class Solution {
-public:
+   public:
     int rangeSum(vector<int>& nums, int n, int left, int right) {
         vector<int> arr;
-        int index=0;
-        while(index<nums.size()){
-            int tmp=0;
-            for(int i=index; i<nums.size(); i++){
-                tmp+=nums[i];
+        int index = 0;
+        while (index < nums.size()) {
+            int tmp = 0;
+            for (int i = index; i < nums.size(); i++) {
+                tmp += nums[i];
                 arr.push_back(tmp);
             }
             index++;
@@ -22,12 +22,11 @@ public:
         // for(auto prev:arr){
         //     std::cout<<prev<<" ";
         // }
-        long ans=0, mod=1e9+7;// TODO: Why to mod?
-        for(int i=left-1; i<=right-1; i++){
-            ans= (ans+arr[i])%mod;
+        long ans = 0, mod = 1e9 + 7;
+        for (int i = left - 1; i <= right - 1; i++) {
+            ans = (ans + arr[i]) % mod;
         }
         return ans;
     }
 };
 // @lc code=end
-

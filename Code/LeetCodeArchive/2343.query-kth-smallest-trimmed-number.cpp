@@ -16,6 +16,7 @@ const static auto initialize = [] {
 class Solution {
    public:
     vector<int> smallestTrimmedNumbers(vector<string>& nums, vector<vector<int>>& queries) {
+        // TODO
         vector<int> res;
         for (auto x : queries) {
             priority_queue<pair<string, int>> v;
