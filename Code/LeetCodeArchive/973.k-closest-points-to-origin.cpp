@@ -23,23 +23,28 @@ const static auto initialize = [] {
 class Solution {
    public:
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        vector<vector<float>> distance;
-        vector<float> tmp(2);
-        for (int i = 0; i < points.size(); i++) {
+        vector<vector<double>> distance;
+        /// vector<double> (*caculate)(int x, int y, int i) = [](int x, int y, int i)
+        auto caculate = [](int x, int y, int i) -> vector<double> {
+            vector<double> tmp(2);
+            int p1 = pow(x, 2);
+            int p2 = pow(y, 2);
+            double p = pow(p1 + p2, 0.5);
+            // saving
             tmp[1] = i;
-            auto p1 = pow(points[i][0], 2);
-            auto p2 = pow(points[i][1], 2);
-            auto p = pow(p1 + p2, 0.5);
             tmp[0] = p;
-            distance.push_back(tmp);
+            return tmp;
+        };
+        for (int i = 0; i < points.size(); i++) {
+            // caculate the distances
+            distance.push_back(caculate(points[i][0], points[i][1], i));
         }
         std::sort(distance.begin(), distance.end());
         vector<vector<int>> answer;
-        int i = 0;
+        int index = 0;
         while (k-- > 0) {
-            int index = distance[i][1];
-            answer.push_back(points[index]);
-            i++;
+            answer.push_back(points[distance[index][1]]);
+            index++;
         }
         return answer;
     }
