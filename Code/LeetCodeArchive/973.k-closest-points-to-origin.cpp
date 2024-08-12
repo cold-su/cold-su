@@ -14,9 +14,9 @@ using namespace std;
 
 // @lc code=start
 const static auto initialize = [] {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
     return nullptr;
 }();
 
@@ -26,19 +26,20 @@ class Solution {
         vector<vector<float>> distance;
         vector<float> tmp(2);
         for (int i = 0; i < points.size(); i++) {
+            tmp[1] = i;
             auto p1 = pow(points[i][0], 2);
             auto p2 = pow(points[i][1], 2);
-            auto p3 = pow(p1 + p2, 0.5);
-            tmp[0] = p3;
-            tmp[1] = i;
+            auto p = pow(p1 + p2, 0.5);
+            tmp[0] = p;
             distance.push_back(tmp);
         }
         std::sort(distance.begin(), distance.end());
         vector<vector<int>> answer;
-        int index = 0;
+        int i = 0;
         while (k-- > 0) {
-            answer.push_back(points[distance[index][1]]);
-            index++;
+            int index = distance[i][1];
+            answer.push_back(points[index]);
+            i++;
         }
         return answer;
     }
