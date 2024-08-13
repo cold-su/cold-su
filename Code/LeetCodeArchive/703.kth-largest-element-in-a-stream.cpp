@@ -14,6 +14,7 @@ const static auto initialize = [] {
 }();
 
 // @lc code=start
+
 class KthLargest {  // TODO
    public:
     vector<int> stream;
@@ -24,7 +25,7 @@ class KthLargest {  // TODO
         for (int num : nums) {
             stream.push_back(num);
         }
-        sort(stream.begin(), stream.end());
+        std::sort(stream.begin(), stream.end());
     }
 
     int add(int val) {
@@ -40,10 +41,9 @@ class KthLargest {  // TODO
         int right = stream.size() - 1;
         while (left <= right) {
             int mid = (left + right) / 2;
-            int midValue = stream[mid];
-            if (midValue == val)
+            if (stream[mid] == val)
                 return mid;
-            if (midValue > val) {
+            if (stream[mid] > val) {
                 // Go to left half
                 right = mid - 1;
             } else {

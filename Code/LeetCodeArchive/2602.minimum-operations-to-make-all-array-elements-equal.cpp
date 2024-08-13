@@ -17,17 +17,6 @@ const static auto initialize = [] {
 class Solution {
    public:
     vector<long long> minOperations(vector<int>& nums, vector<int>& queries) {
-        vector<long long> ans;
-        for (int i = 0; i < queries.size(); ++i) {
-            long long curr = 0;
-            int target = queries[i];
-            // TODO
-            for (int prev : nums) {
-                curr += abs(prev - target);
-            }
-            ans.push_back(curr);
-        }
-        return ans;
     }
 };
 // @lc code=end

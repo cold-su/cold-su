@@ -5,23 +5,50 @@
  */
 
 // @lc code=start
+
+#include <bits/stdc++.h>
+using namespace std;
+const static auto initialize = [] {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    std::cout.tie(nullptr);
+    return nullptr;
+}();
+
 class Solution {
    public:
     vector<int> frequencySort(vector<int>& nums) {
-        map<int, int> mp;
-        for (auto num : nums) {
-            mp[num]++;
+        unordered_map<int, int> freq;
+        for (int num : nums) {
+            freq[num]++;
         }
-        vector<int> top;
-        for (auto it = mp.begin(); it = mp.end(); it++) {
-            top.push_back(it->second);
-        }
-        std::sort(top.rbegin(), top.rend());
-        vector<int> ans;
-        while (ans.size() != nums.size()) {
-            // TODO
-        }
-        return ans;
+
+        std::sort(nums.begin(), nums.end(), [&](int a, int b) {
+            if (freq[a] == freq[b]) {
+                return a > b;
+            }
+            return freq[a] < freq[b];
+        }());
+
+        return nums;
+    }
+};  // TODO
+
+class Solution {
+   public:
+    static vector<int> frequencySort(vector<int>& nums) {
+        constexpr int8_t MINV = -100, MAXV = 100;
+        constexpr uint8_t FSIZE = MAXV - MINV + 1u;
+        uint16_t freqsv[FSIZE];
+        iota(freqsv, freqsv + FSIZE, 100u << 8);
+        for (const int v : nums)
+            freqsv[v - MINV] -= 1u << 8;
+        sort(freqsv, freqsv + FSIZE, greater());
+        nums.clear();
+        for (const uint16_t fv : freqsv)
+            nums.insert(nums.end(), 100u - (fv >> 8), (fv & 0xFF) + MINV);
+        return move(nums);
     }
 };
+
 // @lc code=end
