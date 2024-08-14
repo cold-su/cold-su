@@ -56,7 +56,7 @@ const static auto initialize = [] {
 }();
 
 class Solution {
-   public:  // TODO
+   public:
     vector<vector<int>> subsets(vector<int>& nums) {
         vector<vector<int>> subs;
         vector<int> sub;
