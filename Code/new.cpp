@@ -8,5 +8,14 @@ const static auto initialize = [] {
 }();
 
 int main(void) {
+    deque<int> a;
+    for (int i = 0; i < 8; i++) {
+        a.push_back(i);
+    }
+    a.pop_front();
+    std::cout << a[2];
+    // for (auto it = a.begin(); it != a.end(); it++) {
+    //     std::cout << *it < " ";
+    // }
     return 0;
 }
