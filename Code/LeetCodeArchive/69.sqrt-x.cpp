@@ -67,14 +67,6 @@ class Solution {  // TODO
         });
         return ans;
     }
-    /**
-     * @brief 上界二分搜索
-     *
-     * @param left
-     * @param right
-     * @param match
-     * @return int
-     */
     int search(int left, int right, std::function<bool(int)> match) {
         while (left <= right) {
             int mid = left + ((right - left) >> 1);
