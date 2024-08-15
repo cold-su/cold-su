@@ -75,7 +75,7 @@ const static auto initialize = [] {
 // @lc code=start
 class Solution {
    public:
-    bool lemonadeChange(vector<int>& bills) {  // TODO
+    bool lemonadeChange(vector<int>& bills) {
         int five = 0;
         int ten = 0;
         for (int i : bills) {
