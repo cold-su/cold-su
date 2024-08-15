@@ -8,14 +8,34 @@ const static auto initialize = [] {
 }();
 
 int main(void) {
-    deque<int> a;
-    for (int i = 0; i < 8; i++) {
-        a.push_back(i);
-    }
-    a.pop_front();
-    std::cout << a[2];
-    // for (auto it = a.begin(); it != a.end(); it++) {
-    //     std::cout << *it < " ";
-    // }
+    vector<int> nums;
+    int min = *min_element(nums.begin(), nums.end());
+    int max = *max_element(nums.begin(), nums.end());
+
+    vector<int> arr(max - min + 1);
+    for (int i = 0; i < nums.size(); i++)
+        arr[nums[i] - min]++;
+
+    int c = 0;
+    for (int j = 0; j < arr.size(); j++)
+        while (arr[j]-- > 0)
+            nums[c++] = j + min;
+
     return 0;
+}
+int countingSort(vector<int>& nums) {
+    int min = *min_element(nums.begin(), nums.end());
+    int max = *max_element(nums.begin(), nums.end());
+    int c = 0;
+
+    vector<int> arr(max - min + 1);
+    for (int i = 0; i < nums.size(); i++) {
+        arr[nums[i] - min]++;
+    }
+    for (int j = 0; j < arr.size(); j++) {
+        while (arr[j]-- > 0) {
+            nums[c++] = j + min;
+        }
+    }
+    return nums;
 }
