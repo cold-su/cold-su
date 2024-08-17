@@ -11,6 +11,17 @@ const static auto initialize = [] {
 }();
 
 void solve() {
+    int n;
+    std::cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; i++) {
+        std::cin >> v[i];
+    }
+    if (n == 2 && v[0] + 1 < v[1]) {
+        std::cout << "YES\n";
+    } else {
+        std::cout << "NO\n";
+    }
 
 }
 

@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+#include <bits/stdc++.h>
+using namespace std;
 const static auto initialize = [] {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -13,7 +15,7 @@ const static auto initialize = [] {
 }();
 
 class Solution {
-   public:
+  public:
     vector<int> answer;
     map<int, int> map;
     vector<int> array;
@@ -30,7 +32,7 @@ class Solution {
         return answer;
     }
 
-   private:
+  private:
     void solve(int& k) {
         int index = 0;
         int bak = k - 1;
