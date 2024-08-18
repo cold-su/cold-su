@@ -11,25 +11,20 @@ const static auto initialize = [] {
 }();
 
 void solve() {
-    int l;
-    int r;
-    int L;
-    int R;
-    std::cin >> l >> r >> L >> R;
-    r++;
-    R++;
+    int n;
+    std::cin >> n;
 
-    if (r <= L || R <= l) {
-        std::cout << 1 << "\n";
-    } else {
-        if (l > L) {
-            std::swap(l, L);
-        }
-        if (r > R) {
-            std::swap(r, R);
-        }
-        std::cout << std::min(r, R - 1) - std::max(l + 1, L) + 1 << "\n";
+    vector<int> v(n);
+    for (int i = 0; i < n; i++) {
+        std::cin >> v[i];
     }
+
+    if (n == 2 && v[0] + 1 < v[1]) {
+        std::cout << "YES\n";
+    } else {
+        std::cout << "NO\n";
+    }
+
 }
 
 int main() {
