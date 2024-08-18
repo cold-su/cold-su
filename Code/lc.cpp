@@ -10,28 +10,9 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-void solve() {
-    int n;
-    std::cin >> n;
+class Solution {
+  public:
+    long long maximumValueSum(vector<vector<int>>& board) {
 
-    vector<int> v(n);
-    for (int i = 0; i < n; i++) {
-        std::cin >> v[i];
     }
-
-    if (n == 2 && v[0] + 1 < v[1]) {
-        std::cout << "YES\n";
-    } else {
-        std::cout << "NO\n";
-    }
-
-}
-
-int main() {
-    int t;
-    std::cin >> t;
-    while (t--) {
-        solve();
-    }
-    return 0;
-}
+};
