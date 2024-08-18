@@ -12,7 +12,10 @@ const static auto initialize = [] {
 
 class Solution {
   public:
-    long long maximumValueSum(vector<vector<int>>& board) {
+    vector<int> resultsArray(vector<int>& nums, int k) {
+        if (k == 1) {
+            return nums;
+        }
 
     }
 };
