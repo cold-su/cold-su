@@ -9,13 +9,3 @@ const static auto initialize = [] {
     std::cout.tie(nullptr);
     return nullptr;
 }();
-
-class Solution {
-  public:
-    vector<int> resultsArray(vector<int>& nums, int k) {
-        if (k == 1) {
-            return nums;
-        }
-
-    }
-};
