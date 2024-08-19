@@ -31,7 +31,7 @@
 - [ ] Lyndon分解
 - [ ] K进制FWT
 - [ ] Stern-Brocot树
-- [ ] KMP匹配算法
+- [x] KMP匹配算法
     - [ ] 部分匹配函数
     - [ ] AC自动机
 - [ ] 回滚莫队
