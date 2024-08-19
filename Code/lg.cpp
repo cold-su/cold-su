@@ -9,31 +9,34 @@ const static auto initialize = [] {
     std::cout.tie(nullptr);
     return nullptr;
 }();
-
-void solve() {
-    int l, r, L, R;
-    std::cin >> l >> r >> L >> R;
-    r++;
-    R++;
-
-    if (r <= L || R <= l) {
-        std::cout << 1 << "\n";
-    } else {
-        if (l > L) {
-            std::swap(l, L);
+struct stu {
+    int num;//编号
+    int c, m, e;
+    int sum;
+} student[310];
+bool cmp(stu a, stu b) {
+    if (a.sum > b.sum) { return 1; }
+    else if (a.sum < b.sum) { return 0; }
+    else {
+        if (a.c > b.c) { return 1; }
+        else if (a.c < b.c) { return 0; }
+        else {
+            if (a.num > b.num) { return 0; }
+            else { return 1; }
         }
-        if (r > R) {
-            std::swap(r, R);
-        }
-        std::cout << std::min(r, R - 1) - std::max(l + 1, L) + 1 << "\n";
     }
 }
-
 int main() {
-    int t;
-    std::cin >> t;
-    while (t--) {
-        solve();
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        student[i].num = i; //录入编号
+        cin >> student[i].c >> student[i].m >> student[i].e; //输入
+        student[i].sum = student[i].c + student[i].m + student[i].e; //计算总分
+    }
+    sort(student + 1, student + 1 + n, cmp);
+    for (int i = 1; i <= 5; i++) {
+        cout << student[i].num << ' ' << student[i].sum << endl;
     }
     return 0;
 }
