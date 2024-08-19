@@ -1,13 +1,13 @@
 # 日程
 
-## Competitive Programming
+---
 
 - [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
 - [LibreOJ题库](https://loj.ac/p)
 - [CodeForces题集](https://codeforces.com/problemset)
 - [HydroOJ题集](https://hydro.ac/p)
 
-## 专有名词
+---
 
 - [ ] 欧拉回路
 - [x] 计数排序
@@ -15,7 +15,6 @@
 - [ ] 杜教筛
 - [ ] 完全背包
 - [ ] 基数排序
-    - learned a little.
 - [ ] BFS
 - [ ] 杨表
 - [ ] 二项式定理
