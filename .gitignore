@@ -1,9 +1,7 @@
 .vscode
 .obsidian
 .trash
+.cph
 
-Develop
-
-*.zip
-*.7z
-*.exe
+[Dd]evelop
+[Bb]uild
