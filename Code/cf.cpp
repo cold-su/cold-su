@@ -10,24 +10,7 @@ const static auto initialize = [] {
   return nullptr;
 }();
 
-void solve() {
-  int l, r, L, R;
-  std::cin >> l >> r >> L >> R;
-  r++;
-  R++;
-
-  if (r <= L || R <= l) {
-    std::cout << 1 << "\n";
-  } else {
-    if (l > L) {
-      std::swap(l, L);
-    }
-    if (r > R) {
-      std::swap(r, R);
-    }
-    std::cout << std::min(r, R - 1) - std::max(l + 1, L) + 1 << "\n";
-  }
-}
+void solve() {}
 
 int main() {
   int t;
