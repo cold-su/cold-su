@@ -1,6 +1,7 @@
 # Notes
 
 ```cpp
+// 模板
 #include <bits/stdc++.h>
 using namespace std;
 const static auto initialize = [] {
@@ -10,9 +11,11 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-int search(int left, int right, std::function<bool(int)> match) {
+// 二分搜索 其一
+// 第三个参数有点类似于cmp，以后再补充
+int binarySearch(int left, int right, std::function<bool(int)> match) {
     while (left <= right) {
-        int mid = left + ((right - left) >> 1);
+        int mid = left + (right - left) / 2;// 如此处理可以防止溢出
         if (match(mid)) {
             left = mid + 1;
         } else {
@@ -22,6 +25,7 @@ int search(int left, int right, std::function<bool(int)> match) {
     return left - 1;
 }
 
+// 计数排序
 int countingSort(vector<int>& nums) {
     int min = *min_element(nums.begin(), nums.end());
     int max = *max_element(nums.begin(), nums.end());
@@ -37,6 +41,41 @@ int countingSort(vector<int>& nums) {
         }
     }
     return nums;
+}
+
+// dfs 其一
+void dfs(TreeNode* root, int level) {
+    if (!root) {
+        return;
+    }
+    if (level == max_level) {
+        sum += root->val;
+    }
+    if (level > max_level) {
+        max_level = level;
+        sum = root->val;
+    }
+    dfs(root->left, level + 1);
+    dfs(root->right, level + 1);
+}
+
+// 快读
+void read(int &x) {
+    char c;
+    do {
+        c = getchar();
+    } while (c == ' ' || c == '\n');
+    x = 0;
+    int w = 1;
+    if (c == '-') {
+        w = -1;
+        c = getchar();
+    }
+    do {
+        x = (x << 1) + (x << 3) + c - '0';
+        c = getchar();
+    } while (c != ' ' && c != '\n');
+    x *= w;
 }
 
 ```

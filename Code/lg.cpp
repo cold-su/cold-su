@@ -9,11 +9,7 @@ const static auto initialize = [] {
     std::cout.tie(nullptr);
     return nullptr;
 }();
-struct stu {
-    int num;//编号
-    int c, m, e;
-    int sum;
-} student[310];
+
 int main(int argc, char const *argv[]) {
     /* code */
     return 0;
