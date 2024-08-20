@@ -10,10 +10,11 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-void solve() {
-
+void solve()
+{
 }
 
-int main() {
+int main()
+{
     return 0;
 }

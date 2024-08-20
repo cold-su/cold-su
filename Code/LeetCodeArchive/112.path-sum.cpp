@@ -17,14 +17,16 @@
  * };
  */
 class Solution {
-   public:
-    bool hasPathSum(TreeNode* root, int targetSum) {
+public:
+    bool hasPathSum(TreeNode* root, int targetSum)
+    {
         // int ans = INT_MIN;
         // if (!root) {
         //     return false;
         // }
     }
-    int path(TreeNode* node) {
+    int path(TreeNode* node)
+    {
         if (!node) {
             return 0;
         }
