@@ -2,9 +2,10 @@
 .obsidian/
 .trash/
 .cph/
+.lcpr_data/
+
+[Bb]uild/
 
 *.exe
 *.out
-
-[Dd]evelop
-[Bb]uild
+*.o
