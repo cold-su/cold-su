@@ -12,9 +12,25 @@ const static auto initialize = [] {
 
 void solve()
 {
+    int n;
+    std::cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        std::cin >> arr[i];
+    }
+    vector<int> cnt(*max_element(arr.begin(), arr.end()) + 1, 0);
+    for (int i = 0; i < arr.size(); i++) {
+        cnt[arr[i]] += 1;
+    }
+    std::cout << n - *max_element(cnt.begin(), cnt.end()) << "\n";
 }
 
 int main()
 {
+    int t;
+    std::cin >> t;
+    while (t--) {
+        solve();
+    }
     return 0;
 }
