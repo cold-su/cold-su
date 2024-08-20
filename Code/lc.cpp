@@ -15,6 +15,8 @@ public:
     vector<vector<int>> permute(vector<int>& nums)
     {
         // 要用到回溯
+        // cf上边也有一道题问到permutation的问题了
+        // 赛时没做出来。
         return vector<vector<int>> {};
     }
 };
