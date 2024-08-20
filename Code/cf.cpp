@@ -11,14 +11,9 @@ const static auto initialize = [] {
 }();
 
 void solve() {
-    std::cout<<"Hello\n";
+
 }
 
 int main() {
-    int t;
-    std::cin >> t;
-    while (t--) {
-        solve();
-    }
     return 0;
 }
