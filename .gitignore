@@ -1,8 +1,10 @@
-.vscode
-.obsidian
-.trash
-.cph
-.exe
+.vscode/
+.obsidian/
+.trash/
+.cph/
+
+*.exe
+*.out
 
 [Dd]evelop
 [Bb]uild
