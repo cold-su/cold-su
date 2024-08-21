@@ -20,8 +20,9 @@ public:
     bool detectCapitalUse(string word)
     {
         string upper = "QWERTYUIOPASDFGHJKLZXCVBNM";
-        string lower = "qwertyuiopasdfghjklzxcvbnm";
+
         vector<int> temp(2, 0);
+
         bool is = true;
         for (auto& str : word) {
             if (upper.find(str) != string::npos) {
@@ -33,6 +34,7 @@ public:
                 temp[1]++;
             }
         }
+
         if (temp[0] == word.length()) {
             return true;
         }
