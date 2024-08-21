@@ -12,11 +12,7 @@ const static auto initialize = [] {
 
 class Solution {
 public:
-    vector<vector<int>> permute(vector<int>& nums)
-    {
-        // 要用到回溯
-        // cf上边也有一道题问到permutation的问题了
-        // 赛时没做出来。
+    vector<vector<int>> permute(vector<int>& nums) {
         return vector<vector<int>> {};
     }
 };

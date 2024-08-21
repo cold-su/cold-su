@@ -10,15 +10,13 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-void solve()
-{
+void solve() {
     int n, m, k;
     std::cin >> n >> m >> k;
 
 }
 
-int main()
-{
+int main() {
     int t;
     std::cin >> t;
     while (t--) {

@@ -10,7 +10,6 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-int main(void)
-{
+int main() {
     return 0;
 }
