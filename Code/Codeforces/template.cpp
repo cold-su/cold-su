@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
+
 using namespace std;
+
 using u32 = unsigned;
 using i64 = long long;
 using u64 = unsigned long long;
@@ -10,12 +12,11 @@ const static auto initialize = [] {
     return nullptr;
 }();
 
-void solve()
-{
+void solve() {
+    
 }
 
-int main()
-{
+int main() {
     int t;
     std::cin >> t;
     while (t--) {
