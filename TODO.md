@@ -1,6 +1,6 @@
 # 日程
 
-周三  下线
+---
 
 周四  Codeforces做题
 
@@ -8,22 +8,20 @@
 周五  AC自动机
 
 周六  KMP匹配算法 C++实现
-周六  LeetCode双周赛
+周六  LeetCode 双周赛
 
-周日  LeetCode周赛
+周日  LeetCode 周赛
 
-
----
-
-- [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
-- [LibreOJ题库](https://loj.ac/p)
-- [CodeForces题集](https://codeforces.com/problemset)
-- [HydroOJ题集](https://hydro.ac/p)
+周一  观看 code camp 的视频
 
 ---
 
-- [ ] 欧拉回路
 - [x] 计数排序
+- [x] KMP匹配算法
+  - [x] 理论（了解大致是个怎么回事）
+  - [ ] 部分匹配函数
+  - [ ] AC自动机
+- [ ] 欧拉回路
 - [ ] 堆排序
 - [ ] 杜教筛
 - [ ] 完全背包
@@ -45,8 +43,11 @@
 - [ ] K进制FWT
 - [ ] Stern-Brocot树
 - [ ] 图论
-- [x] KMP匹配算法
-  - [x] 理论（了解大致是个怎么回事）
-  - [ ] 部分匹配函数
-  - [ ] AC自动机
 - [ ] 回滚莫队
+
+---
+
+- [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
+- [LibreOJ题库](https://loj.ac/p)
+- [CodeForces题集](https://codeforces.com/problemset)
+- [HydroOJ题集](https://hydro.ac/p)
