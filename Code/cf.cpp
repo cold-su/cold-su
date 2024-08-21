@@ -11,8 +11,6 @@ const static auto initialize = [] {
 }();
 
 void solve() {
-    int n, m, k;
-    std::cin >> n >> m >> k;
 
 }
 
