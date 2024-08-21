@@ -7,9 +7,9 @@
 // @lc code=start
 class Solution {
 public:
-    int numberOfStableArrays(int zero, int one, int limit) {
-        int len=zero+one;
+    int numberOfStableArrays(int zero, int one, int limit)
+    {
+        int len = zero + one;
     }
 };
 // @lc code=end
-
