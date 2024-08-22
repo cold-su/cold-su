@@ -3,6 +3,7 @@
 周四
 ---
 学习有关于 git stash 的内容
+认识 git merge 与 git rebase 的区别
 
 周五
 ---
