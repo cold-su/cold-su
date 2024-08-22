@@ -1,18 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
-using u32 = unsigned;
-using i64 = long long;
-using u64 = unsigned long long;
-const static auto initialize = [] {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
-    return nullptr;
-}();
-
 class Solution {
 public:
-    vector<vector<int>> permute(vector<int>& nums) {
-        return vector<vector<int>> {};
+    int getMaximumGenerated(int n) {
+        if(n <= 1) {
+            return n;
+        }
+        vector<int> ans(n+1);
+        ans[0]=0;
+        ans[1]=1;
+        for(int i=1; i<n+1; i++) {
+            if(2<=2*i && 2*i<=n) {
+                ans[2*i]=ans[i];
+            }
+            if(2<=2*i+1 && 2*i+1<=n) {
+                ans[2*i+1]=ans[i]+ans[i+1];
+            }
+        }
+        return *max_element(ans.begin(), ans.end());
     }
 };
