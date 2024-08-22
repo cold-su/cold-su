@@ -1,24 +1,23 @@
 # 日程
 
-周四
----
-学习有关于 git stash 的内容
-认识 git merge 与 git rebase 的区别
-
 周五
 ---
 Codeforces做题
 
 周六
 ---
-部分匹配函数
-AC自动机
-KMP匹配算法 C++实现
 LeetCode 双周赛
 
 周日
 ---
 LeetCode 周赛
+
+周一
+---
+部分匹配函数
+AC自动机
+KMP匹配算法 C++实现
+https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
 ---
 

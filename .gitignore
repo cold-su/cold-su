@@ -4,10 +4,13 @@
 .cph/
 .lcpr_data/
 
-tests/
+__pycache__/
+
+[Tt]ests/
 [Bb]uild/
 
 *.exe
 *.out
 *.o
 *.prob
+*.zip
