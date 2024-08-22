@@ -13,7 +13,8 @@ const static auto initialize = [] {
 }();
 
 void solve() {
-    
+    // https://codeforces.com/problemset/problem/1997/A
+    // WA TODO
 }
 
 int main() {
