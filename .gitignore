@@ -4,6 +4,7 @@
 .cph/
 .lcpr_data/
 
+tests/
 [Bb]uild/
 
 *.exe
