@@ -2,17 +2,20 @@
 
 ---
 
-周四  Codeforces做题
+周四
+下线
 
-周五  部分匹配函数
-周五  AC自动机
+周五
+Codeforces做题
+部分匹配函数
+AC自动机
 
-周六  KMP匹配算法 C++实现
-周六  LeetCode 双周赛
+周六
+KMP匹配算法 C++实现
+LeetCode 双周赛
 
-周日  LeetCode 周赛
-
-周一  观看 code camp 的视频
+周日
+LeetCode 周赛
 
 ---
 
