@@ -6,15 +6,6 @@
 
 // @lc code=start
 
-#include <bits/stdc++.h>
-using namespace std;
-const static auto initialize = [] {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    std::cout.tie(nullptr);
-    return nullptr;
-}();
-
 class Solution {
    public:
     vector<int> frequencySort(vector<int>& nums) {
@@ -32,7 +23,11 @@ class Solution {
 
         return nums;
     }
-};  // TODO
+};
+
+// TODO
+// 
+// 最看不懂的一集
 
 class Solution {
    public:

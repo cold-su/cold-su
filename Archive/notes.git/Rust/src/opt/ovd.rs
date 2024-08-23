@@ -48,7 +48,6 @@ pub fn fizz_buzz_b(n: i32) -> Vec<String> {
     ans
 }
 
-// TODO
 fn _number_of_steps(num: i32) -> i32 {
     // O(log W) W=32
     // O(1)
@@ -60,7 +59,6 @@ fn _number_of_steps(num: i32) -> i32 {
     }
 }
 
-// TODO
 fn _is_power_of_two(n: i32) -> bool {
     match n {
         _ if (n & (n - 1) == 0 && n != 0) => true,
@@ -241,7 +239,7 @@ mod closest_nodes_queries_in_a_binary_search_tree {
     use std::cell::RefCell;
     use std::rc::Rc;
     pub fn closest_nodes(root: Option<Rc<RefCell<TreeNode>>>, queries: Vec<i32>) -> Vec<Vec<i32>> {
-        todo!()
+        // 废止
     }
 }
 
@@ -258,5 +256,5 @@ mod closest_nodes_queries_in_a_binary_search_tree {
 //         }
 
 //     }
-//     todo!()
+//     // 废止
 // }

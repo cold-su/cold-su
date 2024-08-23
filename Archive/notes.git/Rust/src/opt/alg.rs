@@ -39,9 +39,5 @@ where
     None
 }
 
-pub fn merge_sort() {
-    todo!()
-}
-
 #[test]
 fn _test() {}

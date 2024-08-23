@@ -36,7 +36,6 @@ The official Docker image is a great way to get up and running in a few minutes,
 docker pull squidfunk/mkdocs-material
 ```
 
-#TODO
 ## 外链
 
 ### [在虚拟环境里面用pip](https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment)
