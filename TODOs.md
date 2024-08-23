@@ -4,8 +4,7 @@
 
 | 周六
 --
-LeetCode 双周赛
-数学复健
+下线
 
 | 周日
 --
@@ -15,6 +14,7 @@ https://codeforces.com/problemset/problem/1997/A 参考答案 https://codeforces
 
 | 周一
 --
+数学复健
 认识部分匹配函数
 认识AC自动机
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
@@ -22,18 +22,15 @@ C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-th
 | 每日的新知识
 --
 let's get ... (Example: Let's get down of business.)
-highway -> freeway
 have all everything ready -> got all the bases covered
 person in the car not the driver
-snacks -> munchies
-pit stop
 depart
-fill up the tank
-packed
-thrunk
-starve
 talking -> conversation
-on the way home
+stand sb up -> blew(blow) sb off
+defeat
+swear
+espisode
+podcast
 
 ## 前置概念
 
