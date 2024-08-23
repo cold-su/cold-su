@@ -1,23 +1,21 @@
 # 日程
 
-周五
----
-Codeforces做题
-
 周六
 ---
 LeetCode 双周赛
+数学复健
 
 周日
 ---
 LeetCode 周赛
+Codeforces Round 968 (Div. 2)
+https://codeforces.com/problemset/problem/1997/A 参考答案 https://codeforces.com/problemset/submission/1891/277804567
 
 周一
 ---
-部分匹配函数
-AC自动机
-KMP匹配算法 C++实现
-https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
+认识部分匹配函数
+认识AC自动机
+C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
 ---
 
