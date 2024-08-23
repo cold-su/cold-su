@@ -6,11 +6,15 @@
 
 __pycache__/
 
+[Tt]arget/
 [Tt]ests/
 [Bb]uild/
 
+*/!*.*
 *.exe
 *.out
 *.o
 *.prob
 *.zip
+*.7z
+*.code-workspace
