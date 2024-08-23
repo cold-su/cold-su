@@ -1,23 +1,41 @@
-# 日程
+# TODOs
 
-周六
----
+## 日程
+
+| 周六
+--
 LeetCode 双周赛
 数学复健
 
-周日
----
+| 周日
+--
 LeetCode 周赛
 Codeforces Round 968 (Div. 2)
 https://codeforces.com/problemset/problem/1997/A 参考答案 https://codeforces.com/problemset/submission/1891/277804567
 
-周一
----
+| 周一
+--
 认识部分匹配函数
 认识AC自动机
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
 
----
+| 每日的新知识
+--
+let's get ... (Example: Let's get down of business.)
+highway -> freeway
+have all everything ready -> got all the bases covered
+person in the car not the driver
+snacks -> munchies
+pit stop
+depart
+fill up the tank
+packed
+thrunk
+starve
+talking -> conversation
+on the way home
+
+## 前置概念
 
 - [x] 计数排序
 - [x] KMP匹配算法
@@ -48,7 +66,7 @@ C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-th
 - [ ] 图论
 - [ ] 回滚莫队
 
----
+## 题库
 
 - [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
 - [LibreOJ题库](https://loj.ac/p)
