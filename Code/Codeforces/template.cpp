@@ -1,4 +1,13 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>/* -std=gnu++2a */
+
+/**
+ * How-to-use:
+ * 
+ * println("Hello {} {}", "World", "!");
+ * 
+ * println("Hello {:.2f}", 3.1415);
+ */
+#define println(...) puts(std::format(__VA_ARGS__).c_str())
 
 using namespace std;
 
