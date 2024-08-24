@@ -49,6 +49,8 @@ sacrifice 牺牲
 cenotaph 纪念碑
 screwed 完蛋了
 insurance 保险
+std::stoi
+https://en.cppreference.com/w/cpp/string/basic_string/stol
 
 | 每日的时间浪费
 --
