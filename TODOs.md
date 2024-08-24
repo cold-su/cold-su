@@ -35,6 +35,10 @@ https://www.youtube.com/watch?v=I6O8SrWQXJY
 allies（第二次世界大战时的）同盟国
 treaty（国家之间的）条约
 
+| 每日的时间浪费
+--
+[【Covered by 超学生×七海うらら】俄罗斯套娃](https://www.bilibili.com/video/BV1Dm421g7kB/)
+
 
 ## 前置概念
 
