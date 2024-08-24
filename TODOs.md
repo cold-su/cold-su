@@ -12,7 +12,7 @@ https://codeforces.com/problemset/problem/2004/B
 
 | 周一
 --
-数学复健
+[一口气学完图论](https://www.bilibili.com/video/BV1aE4m1R79t/)
 认识部分匹配函数
 认识AC自动机
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
