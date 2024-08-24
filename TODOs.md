@@ -27,6 +27,14 @@ stand sb up -> blew(blow) sb off
 defeat
 swear
 espisode
+std::rotate();
+https://www.bilibili.com/video/BV1aE4m1R79t/
+哥尼斯堡七桥问题：不重复地走完七座桥 -> 图论入门，要入度加上出度的数值为偶数才可以满足条件，因此这个问题被证明不可行。
+Veteran's Day: everyone honors all the soldier who participated in different wars and they fought for their country.
+https://www.youtube.com/watch?v=I6O8SrWQXJY
+allies（第二次世界大战时的）同盟国
+treaty（国家之间的）条约
+
 
 ## 前置概念
 
