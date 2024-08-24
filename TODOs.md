@@ -52,6 +52,7 @@ screwed 完蛋了
 | 每日的时间浪费
 --
 [【Covered by 超学生×七海うらら】俄罗斯套娃](https://www.bilibili.com/video/BV1Dm421g7kB/)
+[我要送你《日不落》的想念！【小柔翻唱】](https://www.bilibili.com/video/BV1vy411e7DC/)
 
 
 ## 前置概念
