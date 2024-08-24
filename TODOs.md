@@ -2,15 +2,13 @@
 
 ## 日程
 
-| 周六
---
-下线
-
 | 周日
 --
 LeetCode 周赛
 Codeforces Round 968 (Div. 2)
-https://codeforces.com/problemset/problem/1997/A 参考答案 https://codeforces.com/problemset/submission/1891/277804567
+https://codeforces.com/problemset/problem/1997/A 答案 https://codeforces.com/blog/entry/132154
+https://codeforces.com/problemset/submission/1891/277804567
+https://codeforces.com/problemset/problem/2004/B
 
 | 周一
 --
@@ -24,13 +22,11 @@ C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-th
 let's get ... (Example: Let's get down of business.)
 have all everything ready -> got all the bases covered
 person in the car not the driver
-depart
 talking -> conversation
 stand sb up -> blew(blow) sb off
 defeat
 swear
 espisode
-podcast
 
 ## 前置概念
 
