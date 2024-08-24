@@ -34,6 +34,20 @@ Veteran's Day: everyone honors all the soldier who participated in different war
 https://www.youtube.com/watch?v=I6O8SrWQXJY
 allies（第二次世界大战时的）同盟国
 treaty（国家之间的）条约
+contract 合同
+commemorate 纪念 to remember with respect
+flunk 考试不及格 <- failed a subject 
+you are crazy -> what are you talking about?
+sarcastic 讽刺的
+how do you not understand what this is -> what planet are you from? <- how do you not know this
+critical 至关重要的
+relieved 松了一口气
+armistice 停战协议
+aspect 方面 a key aspect 重要方面
+invader 入侵者
+sacrifice 牺牲
+cenotaph 纪念碑
+screwed 完蛋了
 
 | 每日的时间浪费
 --
