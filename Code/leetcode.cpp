@@ -1,8 +1,14 @@
-class Solution {
-public:
-    int strStr(string haystack, string needle) {
-        // 过后再用 KMP 算法做
-        // TODO
-        return haystack.find(needle);
-    }
-};
+// class Solution {
+// public:
+//     vector<int> findColumnWidth(vector<vector<int>>& grid) {
+//         vector<int> temp(grid.size() + 1);
+//         for (int i = 0; i < grid[0].size(); i++) {
+//             for (int j = 0; j < grid.size(); j++) {
+//                 std::cout << grid[j][i] << " ";
+//             }
+//             std::cout << "\n";
+//         }
+        
+//         return temp;
+//     }
+// };

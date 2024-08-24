@@ -1,14 +1,9 @@
 #include <bits/stdc++.h>
-using namespace std;
-void solve() {
-    int n;
-    std::cin >> n;
 
-    int i=0;
-    vector<int> v;
-    while (n--) {
-        std::cin >> v[i++];
-    }
+using namespace std;
+
+void solve() {
+    
 }
 
 int main() {
@@ -18,6 +13,7 @@ int main() {
 
     int t;
     std::cin >> t;
-    while (t--) solve();
+    while (t--)
+        solve();
     return 0;
 }
