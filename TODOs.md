@@ -55,6 +55,7 @@ insurance 保险
 [【Covered by 超学生×七海うらら】俄罗斯套娃](https://www.bilibili.com/video/BV1Dm421g7kB/)
 [我要送你《日不落》的想念！【小柔翻唱】](https://www.bilibili.com/video/BV1vy411e7DC/)
 [擅長逃跑的殿下 - 08](https://t.me/channel_ani/12025)
+[心惊报](https://t.me/xinjingdaily)
 
 ## 前置概念
 
