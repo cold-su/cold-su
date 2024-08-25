@@ -1,21 +1,15 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
-void solve() {
-    int n;
-    string s;
-    std::cin >> n >> s;
-    if (s[0] == s[n - 1]) std::cout << "NO\n";
-    else std::cout << "YES\n";
-}
-
-int main() {
-
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    int t;
-    std::cin >> t;
-    while (t--) solve();
-
-}
+class Solution {
+public:
+    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
+        for (int i = 0; i < k; i++) {
+            int min = *std::min_element(nums.begin(), nums.end());
+            for (int j = 0; j < nums.size(); j++) {
+                if (nums[j] == min) {
+                    nums[j] *= multiplier;
+                    break;
+                }
+            }
+        }
+        return nums;
+    }
+};
