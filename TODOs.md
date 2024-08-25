@@ -12,6 +12,7 @@ https://codeforces.com/problemset/problem/2004/B
 认识部分匹配函数
 认识AC自动机
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
+[How computer processors run conditions and loops](https://www.youtube.com/watch?v=Ui6QyzcD3_E)
 
 | 每日的新知识
 --
