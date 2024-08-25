@@ -2,15 +2,12 @@
 
 ## 日程
 
-| 周日
+| 待办
 --
 Codeforces Round 968 (Div. 2)
 https://codeforces.com/problemset/problem/1997/A 答案 https://codeforces.com/blog/entry/132154
 https://codeforces.com/problemset/submission/1891/277804567
 https://codeforces.com/problemset/problem/2004/B
-
-| 周一
---
 [一口气学完图论](https://www.bilibili.com/video/BV1aE4m1R79t/)
 认识部分匹配函数
 认识AC自动机
