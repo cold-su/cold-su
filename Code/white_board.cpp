@@ -2,17 +2,14 @@
 
 using namespace std;
 
-void solve() {
-    string s;
-    std::cin >> s;
-    if (s.size() > 10) {
-        std::cout << s[0];
-        std::cout << s.size() - 2;
-        std::cout << s[s.size() - 1];
-    } else {
-        std::cout << s;
+void solve(int& prob) {
+    int cnt = 0;
+    for (int i = 0; i < 3; i++) {
+        int n;
+        std::cin >> n;
+        if (n == 1) cnt++;
     }
-    std::cout << '\n';
+    if (cnt >= 2) prob++;
 }
 
 int main() {
@@ -21,6 +18,7 @@ int main() {
     std::cin.tie(nullptr);
     int t;
     std::cin >> t;
-    while (t--) solve();
-
+    int prob = 0;
+    while (t--) solve(prob);
+    std::cout << prob;
 }
