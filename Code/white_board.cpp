@@ -2,23 +2,24 @@
 
 using namespace std;
 
-int main() {
-    int n, k;
-    std::cin >> n >> k;
+void solve() {
+    int n;
+    std::cin >> n;
     vector<int> v(n);
     for (int i = 0; i < n; i++) {
         std::cin >> v[i];
     }
-    int t = v[0];
-    for (int& prev : v) {
-        if (prev < t && k > 0) {
-            t = prev;
-        }
-        k--;
-    }
-    int cnt = 0;
-    for (int& prev : v) {
-        if (prev >= t && prev != 0) cnt++;
-    }
-    std::cout << cnt;
+    std::sort(v.rbegin(), v.rend());
+    std::cout << v[(v.size() - 1) / 2];
+    std::cout << '\n';
+}
+
+int main() {
+
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    int t;
+    std::cin >> t;
+    while (t--) solve();
+
 }
