@@ -1,24 +1,25 @@
-/*
-// Definition for Employee.
-class Employee {
-public:
-    int id;
-    int importance;
-    vector<int> subordinates;
-};
-*/
-
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
-    int getImportance(vector<Employee*> employees, int id) {
-        int val = 0;
-        for (auto& emp : employees) {
-            if (emp.id == id) {
-                val += emp.importance;
-                if (emp.subordinates.size() == 0) break;
-                // TODO
-            }
+    ListNode* reverseList(ListNode* head) {
+        if (head == nullptr) return head;
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+        while (curr) {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
         }
-        return val;
+        return prev;
     }
 };
