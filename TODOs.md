@@ -49,6 +49,7 @@ std::stoi
 https://en.cppreference.com/w/cpp/string/basic_string/stol
 multiplier 乘数
 https://github.com/Yawn-Sean/Daily_CF_Problems
+ranges::make_heap();
 
 ## 前置概念
 
