@@ -4,14 +4,10 @@ using namespace std;
 
 void solve() {
     int n;
-    std::cin >> n;
-    vector<int> v(n);
-    for (int i = 0; i < n; i++) {
-        std::cin >> v[i];
-    }
-    std::sort(v.rbegin(), v.rend());
-    std::cout << v[(v.size() - 1) / 2];
-    std::cout << '\n';
+    string s;
+    std::cin >> n >> s;
+    if (s[0] == s[n - 1]) std::cout << "NO\n";
+    else std::cout << "YES\n";
 }
 
 int main() {
