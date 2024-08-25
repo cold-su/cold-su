@@ -4,7 +4,6 @@
 
 | 周日
 --
-LeetCode 周赛
 Codeforces Round 968 (Div. 2)
 https://codeforces.com/problemset/problem/1997/A 答案 https://codeforces.com/blog/entry/132154
 https://codeforces.com/problemset/submission/1891/277804567
@@ -26,12 +25,11 @@ talking -> conversation
 stand sb up -> blew(blow) sb off
 defeat
 swear
-espisode
 std::rotate();
 https://www.bilibili.com/video/BV1aE4m1R79t/
 哥尼斯堡七桥问题：不重复地走完七座桥 -> 图论入门，要入度加上出度的数值为偶数才可以满足条件，因此这个问题被证明不可行。
-Veteran's Day: everyone honors all the soldier who participated in different wars and they fought for their country.
-https://www.youtube.com/watch?v=I6O8SrWQXJY
+Veteran's Day: 退役老兵节
+[English Podcast For Learning English Episode 162 | Learn English With Podcast Conversation](https://www.youtube.com/watch?v=I6O8SrWQXJY)
 allies（第二次世界大战时的）同盟国
 treaty（国家之间的）条约
 contract 合同
@@ -51,14 +49,6 @@ screwed 完蛋了
 insurance 保险
 std::stoi
 https://en.cppreference.com/w/cpp/string/basic_string/stol
-
-| 每日的时间浪费
---
-[【Covered by 超学生×七海うらら】俄罗斯套娃](https://www.bilibili.com/video/BV1Dm421g7kB/)
-[我要送你《日不落》的想念！【小柔翻唱】](https://www.bilibili.com/video/BV1vy411e7DC/)
-[擅長逃跑的殿下 - 08](https://t.me/channel_ani/12025)
-[心惊报](https://t.me/xinjingdaily)
-`欲望*3`
 
 ## 前置概念
 
