@@ -14,18 +14,13 @@ https://codeforces.com/problemset/problem/2004/B
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
 [How computer processors run conditions and loops](https://www.youtube.com/watch?v=Ui6QyzcD3_E)
 
-| 每日的新知识
+| 帕秋莉的每日手记
 --
-let's get ... (Example: Let's get down of business.)
 have all everything ready -> got all the bases covered
 person in the car not the driver
-talking -> conversation
 stand sb up -> blew(blow) sb off
-defeat
-swear
 std::rotate();
 https://www.bilibili.com/video/BV1aE4m1R79t/
-哥尼斯堡七桥问题：不重复地走完七座桥 -> 图论入门，要入度加上出度的数值为偶数才可以满足条件，因此这个问题被证明不可行。
 Veteran's Day: 退役老兵节
 [English Podcast For Learning English Episode 162 | Learn English With Podcast Conversation](https://www.youtube.com/watch?v=I6O8SrWQXJY)
 allies（第二次世界大战时的）同盟国
@@ -33,7 +28,6 @@ treaty（国家之间的）条约
 contract 合同
 commemorate 纪念 to remember with respect
 flunk 考试不及格 <- failed a subject 
-you are crazy -> what are you talking about?
 sarcastic 讽刺的
 how do you not understand what this is -> what planet are you from? <- how do you not know this
 critical 至关重要的
@@ -51,6 +45,24 @@ multiplier 乘数
 https://github.com/Yawn-Sean/Daily_CF_Problems
 ranges::make_heap();
 [【vector】emplace_back和push_back的区别？为什么要用emplace_back?](https://www.bilibili.com/video/BV1QfWVeVEsM/)
+[郑州大学2024年暑假算法培训Day1:基础数据结构及其STL](https://www.bilibili.com/video/BV1qXpRevE2T/)
+priority 优先级
+`std::priority_queue<int> q;` 创建大根堆（优先队列默认是大根堆）
+`std::priority_queue<int, vector<int>, geater<int>> q;` 这样便可以创建小根堆（最小堆）
+```cpp
+// 定义比较结构体
+
+struct cmp {
+    bool operator() (const int a, const int b) {
+        return a < b; // 从小到大排序
+        // 结果里面，任意两个数 0 <= i < j < n.size() 都满足 n_i < n_j
+    }
+}
+
+// 平时可以写结构体形式的 cmp 规则，也可以写匿名函数
+// 匿名函数我感觉很像 lambda 表达式
+ 
+```
 
 ## 前置概念
 
