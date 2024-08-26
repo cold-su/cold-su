@@ -50,6 +50,7 @@ https://en.cppreference.com/w/cpp/string/basic_string/stol
 multiplier 乘数
 https://github.com/Yawn-Sean/Daily_CF_Problems
 ranges::make_heap();
+[【vector】emplace_back和push_back的区别？为什么要用emplace_back?](https://www.bilibili.com/video/BV1QfWVeVEsM/)
 
 ## 前置概念
 
