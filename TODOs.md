@@ -38,7 +38,6 @@ sacrifice 牺牲
 cenotaph 纪念碑
 screwed 完蛋了
 insurance 保险
-std::stoi
 https://en.cppreference.com/w/cpp/string/basic_string/stol
 multiplier 乘数
 https://github.com/Yawn-Sean/Daily_CF_Problems
