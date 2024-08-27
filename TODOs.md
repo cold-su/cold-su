@@ -63,6 +63,18 @@ struct cmp {
  
 ```
 std::upper_bound(nums.begin(), nums.end(), x) 在 nums 里面查找第一个大于 x 的数，返回地址
+loan 贷款
+border
+记忆化搜索
+旋转treap
+线段树
+最小圆
+扩展中国剩余定理
+最小生成树
+整体二分
+三分
+数论分块
+离散化
 
 ## 前置概念
 
