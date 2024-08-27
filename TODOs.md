@@ -43,7 +43,6 @@ multiplier 乘数
 https://github.com/Yawn-Sean/Daily_CF_Problems
 ranges::make_heap();
 [【vector】emplace_back和push_back的区别？为什么要用emplace_back?](https://www.bilibili.com/video/BV1QfWVeVEsM/)
-[郑州大学2024年暑假算法培训Day1:基础数据结构及其STL](https://www.bilibili.com/video/BV1qXpRevE2T/)
 priority 优先级
 `std::priority_queue<int> q;` 创建大根堆（优先队列默认是大根堆）
 `std::priority_queue<int, vector<int>, geater<int>> q;` 这样便可以创建小根堆（最小堆）
