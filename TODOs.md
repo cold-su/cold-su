@@ -29,7 +29,6 @@ contract 合同
 commemorate 纪念 to remember with respect
 flunk 考试不及格 <- failed a subject 
 sarcastic 讽刺的
-how do you not understand what this is -> what planet are you from? <- how do you not know this
 critical 至关重要的
 relieved 松了一口气
 armistice 停战协议
@@ -63,6 +62,7 @@ struct cmp {
 // 匿名函数我感觉很像 lambda 表达式
  
 ```
+std::upper_bound(nums.begin(), nums.end(), x) 在 nums 里面查找第一个大于 x 的数，返回地址
 
 ## 前置概念
 
