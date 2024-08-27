@@ -2,41 +2,28 @@
 
 using namespace std;
 
-struct stu {
-    int id;
+struct __president {
+	int idx;
+	string vote;
 
-    int cn;
-    int _;
-    int __;
-
-    int total;
-
-    bool operator<(const stu& b) const {
-        if (total == b.total) {
-            if (cn == b.cn) {
-                return id < b.id;
-            }
-            return cn > b.cn;
-        }
-        return total > b.total;
-    }
+	bool operator<(const __president b) const {
+		if (vote.length() != b.vote.length()) {
+			return vote.length() > b.vote.length();
+		}
+		return vote > b.vote;
+	}
 };
 
 int main() {
     int n;
     std::cin >> n;
-    vector<stu> arr(n);
 
+    vector<__president> res(n);
     for (int i = 0; i < n; i++) {
-        arr[i].id = i + 1;
-        std::cin >> arr[i].cn >> arr[i]._ >> arr[i].__;
-        arr[i].total = arr[i].cn + arr[i]._ + arr[i].__;
+    	res[i].idx = i + 1;
+    	std::cin >> res[i].vote;
     }
-
-    std::sort(arr.begin(), arr.end());
-
-    for (int i = 0; i < 5; i++) {
-        std::cout << arr[i].id << " " << arr[i].total << "\n";
-    }
+    std::sort(res.begin(), res.end());
+    std::cout << res[0].idx << "\n" << res[0].vote;
     return 0;
 }
