@@ -66,6 +66,7 @@ border数组
 数论分块
 离散化
 哈夫曼编码、哈夫曼树
+求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
 
 ## 前置概念
 
