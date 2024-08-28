@@ -22,7 +22,6 @@ stand sb up -> blew(blow) sb off
 std::rotate();
 https://www.bilibili.com/video/BV1aE4m1R79t/
 Veteran's Day: 退役老兵节
-[English Podcast For Learning English Episode 162 | Learn English With Podcast Conversation](https://www.youtube.com/watch?v=I6O8SrWQXJY)
 allies（第二次世界大战时的）同盟国
 treaty（国家之间的）条约
 contract 合同
@@ -38,41 +37,35 @@ sacrifice 牺牲
 cenotaph 纪念碑
 screwed 完蛋了
 insurance 保险
-https://en.cppreference.com/w/cpp/string/basic_string/stol
 multiplier 乘数
-https://github.com/Yawn-Sean/Daily_CF_Problems
 ranges::make_heap();
-[【vector】emplace_back和push_back的区别？为什么要用emplace_back?](https://www.bilibili.com/video/BV1QfWVeVEsM/)
 priority 优先级
 `std::priority_queue<int> q;` 创建大根堆（优先队列默认是大根堆）
-`std::priority_queue<int, vector<int>, geater<int>> q;` 这样便可以创建小根堆（最小堆）
+`std::priority_queue<int, vector<int>, geater<int>> q;` 
+这样便可以创建小根堆（最小堆）->[P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
 ```cpp
-// 定义比较结构体
+struct __president {
+    int id;
 
-struct cmp {
-    bool operator() (const int a, const int b) {
-        return a < b; // 从小到大排序
-        // 结果里面，任意两个数 0 <= i < j < n.size() 都满足 n_i < n_j
+    // 重载
+    bool operator<(const __president b) const {
+        return id < b.id;
     }
 }
-
-// 平时可以写结构体形式的 cmp 规则，也可以写匿名函数
-// 匿名函数我感觉很像 lambda 表达式
- 
 ```
-std::upper_bound(nums.begin(), nums.end(), x) 在 nums 里面查找第一个大于 x 的数，返回地址
 loan 贷款
-border
+border数组
 记忆化搜索
 旋转treap
 线段树
-最小圆
+最小圆覆盖算法（最小圆覆盖问题）
 扩展中国剩余定理
 最小生成树
 整体二分
 三分
 数论分块
 离散化
+哈夫曼编码、哈夫曼树
 
 ## 前置概念
 
