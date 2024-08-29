@@ -53,7 +53,7 @@ border数组
 离散化
 哈夫曼编码、哈夫曼树
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
-[配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
+[配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html) 存疑：为什么 GitHub 上面仍然没有验证标志？
 
 ## 前置概念
 
