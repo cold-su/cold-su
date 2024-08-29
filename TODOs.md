@@ -2,8 +2,9 @@
 
 ## 日程
 
-| 待办
+| 帕秋莉的每日手记
 --
+
 Codeforces Round 968 (Div. 2)
 https://codeforces.com/problemset/problem/1997/A 答案 https://codeforces.com/blog/entry/132154
 https://codeforces.com/problemset/submission/1891/277804567
@@ -13,9 +14,6 @@ https://codeforces.com/problemset/problem/2004/B
 认识AC自动机
 C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
 [How computer processors run conditions and loops](https://www.youtube.com/watch?v=Ui6QyzcD3_E)
-
-| 帕秋莉的每日手记
---
 have all everything ready -> got all the bases covered
 person in the car not the driver
 stand sb up -> blew(blow) sb off
@@ -37,8 +35,7 @@ cenotaph 纪念碑
 screwed 完蛋了
 insurance 保险
 multiplier 乘数
-`std::priority_queue<int, vector<int>, geater<int>> q;` 
-这样便可以创建小根堆（最小堆）->[P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
+[P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
 loan 贷款
 border数组
 记忆化搜索
@@ -53,7 +50,7 @@ border数组
 离散化
 哈夫曼编码、哈夫曼树
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
-[配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html) 存疑：为什么 GitHub 上面仍然没有验证标志？
+[配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html) Maybe it needs a GPG signature.
 
 ## 前置概念
 
