@@ -19,7 +19,7 @@ C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-th
 have all everything ready -> got all the bases covered
 person in the car not the driver
 stand sb up -> blew(blow) sb off
-std::rotate();
+`std::rotate();` 仍有疑惑
 https://www.bilibili.com/video/BV1aE4m1R79t/
 Veteran's Day: 退役老兵节
 allies（第二次世界大战时的）同盟国
@@ -40,19 +40,8 @@ insurance 保险
 multiplier 乘数
 ranges::make_heap();
 priority 优先级
-`std::priority_queue<int> q;` 创建大根堆（优先队列默认是大根堆）
 `std::priority_queue<int, vector<int>, geater<int>> q;` 
 这样便可以创建小根堆（最小堆）->[P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
-```cpp
-struct __president {
-    int id;
-
-    // 重载
-    bool operator<(const __president b) const {
-        return id < b.id;
-    }
-}
-```
 loan 贷款
 border数组
 记忆化搜索
