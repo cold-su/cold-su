@@ -51,6 +51,7 @@ border数组
 哈夫曼编码、哈夫曼树
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
 [配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html) Maybe it needs a GPG signature.
+My Linux computer can't type Chinese, that's why I'm learning Eng.
 
 ## 前置概念
 
