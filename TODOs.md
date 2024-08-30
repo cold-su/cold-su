@@ -49,6 +49,8 @@ border数组
 哈夫曼编码、哈夫曼树
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
 [配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
+Sunset Hill 落日山丘（游戏）
+
 ## 前置概念
 
 - [x] 计数排序
