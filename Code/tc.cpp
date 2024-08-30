@@ -17,7 +17,6 @@ const static auto init = [] {
 }();
 
 void solve() {
-    
 }
 
 signed main() {

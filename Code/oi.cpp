@@ -17,6 +17,5 @@ const static auto init = [] {
 }();
 
 int main() {
-    
     return 0;
 }
