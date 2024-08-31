@@ -37,6 +37,7 @@ loan 贷款
 [配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
 台阶问题 洛谷 - P1192 （与等比数列和取模有关的）
 https://vjudge.net/problem/%E6%B4%9B%E8%B0%B7-P2871 01 背包问题
+同伦类型论
 
 ## 前置概念
 
