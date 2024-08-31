@@ -35,21 +35,10 @@ insurance 保险
 multiplier 乘数
 [P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
 loan 贷款
-border数组
-记忆化搜索
-旋转treap
-线段树
-最小圆覆盖算法（最小圆覆盖问题）
-扩展中国剩余定理
-最小生成树
-整体二分
-三分
-数论分块
-离散化
-哈夫曼编码、哈夫曼树
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
 [配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
 Sunset Hill 落日山丘（游戏）
+台阶问题 洛谷 - P1192 （与等比数列和取模有关的）
 
 ## 前置概念
 
@@ -58,6 +47,8 @@ Sunset Hill 落日山丘（游戏）
   - [x] 理论（了解大致是个怎么回事）
   - [ ] 部分匹配函数
   - [ ] AC自动机
+- [ ] 回滚莫队
+  - [ ] 莫队
 - [ ] 欧拉回路
 - [ ] 堆排序
 - [ ] 杜教筛
@@ -80,11 +71,21 @@ Sunset Hill 落日山丘（游戏）
 - [ ] K进制FWT
 - [ ] Stern-Brocot树
 - [ ] 图论
-- [ ] 回滚莫队
+- [ ] border数组
+- [ ] 记忆化搜索
+- [ ] 旋转treap
+- [ ] 线段树
+- [ ] 最小圆覆盖算法（最小圆覆盖问题）
+- [ ] 扩展中国剩余定理
+- [ ] 最小生成树
+- [ ] 整体二分
+- [ ] 三分
+- [ ] 数论分块
+- [ ] 离散化
+- [ ] 哈夫曼编码、哈夫曼树
 
 ## 题库
 
+- [VJudge（内整合多家 OJ）](https://vjudge.net/)
+- [HydroOJ题集（内整合多家 OJ）](https://hydro.ac/p)
 - [LeetCode题单](https://huxulm.github.io/lc-rating/zen)
-- [LibreOJ题库](https://loj.ac/p)
-- [CodeForces题集](https://codeforces.com/problemset)
-- [HydroOJ题集](https://hydro.ac/p)
