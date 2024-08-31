@@ -17,7 +17,6 @@ person in the car not the driver
 stand sb up -> blew(blow) sb off
 `std::rotate();`
 https://www.bilibili.com/video/BV1aE4m1R79t/
-allies（第二次世界大战时的）同盟国
 treaty（国家之间的）条约
 contract 合同
 commemorate 纪念 to remember with respect
@@ -33,11 +32,9 @@ cenotaph 纪念碑
 screwed 完蛋了
 insurance 保险
 multiplier 乘数
-[P1090 [NOIP2004 提高组] 合并果子 / [USACO06NOV] Fence Repair G](https://www.luogu.com.cn/problem/P1090)
 loan 贷款
 求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
 [配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
-Sunset Hill 落日山丘（游戏）
 台阶问题 洛谷 - P1192 （与等比数列和取模有关的）
 
 ## 前置概念
