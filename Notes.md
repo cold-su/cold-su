@@ -1,6 +1,52 @@
 # Notes
 
 ```cpp
+// https://www.luogu.com.cn/article/e6r2knir
+// 模拟退火
+#include<bits/stdc++.h>
+#define MAXN 40 //第一次把MAXN看成20，结果WA了20分orz
+#define Tk 0.99789 //降温系数，可调，调得好可上天入地
+#define rd (rand() % n + 1)
+using namespace std;
+
+int v[MAXN];
+int V, n, ans = 0, tot = 0;
+bool vis[MAXN];
+double T = 1926; //初温，大部分模拟退火用这个初温都能AC
+
+bool accept(int del) {
+    return ((del>0)||exp(del/T) > (double)rand()/RAND_MAX);
+} //转移概率表达式
+
+int main() {
+    srand(time(0));
+    scanf("%d%d", &V ,&n);
+    for(int i=1; i<=n; i++) 
+        scanf("%d", &v[i]);
+    int a;
+    memset(vis, 0, sizeof(vis));
+    while(T > 1e-14) {
+        ans = ans<tot ? tot : ans; //维护最优答案，以防非酋情况发生
+        a = rd; //进行随机
+        int dE = v[a];
+        if(vis[a]) dE *= -1; //产生能量差
+        if(accept(dE)) { //以概率发生转移
+            if(vis[a]) {
+                vis[a] = false;
+                tot -= v[a];
+            }else{
+                if(tot + v[a] > V) continue;
+                vis[a] = true;
+                tot += v[a];
+            }
+        }
+        T *= Tk; //降温
+    }
+    cout << V - ans;
+    return 0;
+}
+
+// 力扣的链表实现
 struct ListNode {
     int val;
     ListNode *next;
