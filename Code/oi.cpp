@@ -15,6 +15,10 @@ const static auto init = [] {
     return nullptr;
 }();
 
+void solve() {
+}
+
 int main() {
+    solve();
     return 0;
 }
