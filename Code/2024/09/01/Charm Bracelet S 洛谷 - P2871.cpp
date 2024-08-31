@@ -27,7 +27,7 @@ void solve() {
             dp[j] = max(dp[j], dp[j - w[i]] + v[i]);
         }
     }
-    std::cout << dp[m];
+    println("{}", dp[m]);
 }
 
 int main() {
