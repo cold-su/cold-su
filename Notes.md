@@ -46,8 +46,11 @@ int main() {
     return 0;
 }
 
+```
+
+```cpp
 // 力扣的链表实现
-struct ListNode {
+typedef struct ListNode {
     int val;
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
