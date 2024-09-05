@@ -9,7 +9,7 @@ const static auto init = [] {
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
     return nullptr;
-}();
+} ();
 
 void solve() {
 }
