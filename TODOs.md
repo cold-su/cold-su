@@ -18,12 +18,9 @@ stand sb up -> blew(blow) sb off
 `std::rotate();`
 https://www.bilibili.com/video/BV1aE4m1R79t/
 treaty（国家之间的）条约
-contract 合同
 commemorate 纪念 to remember with respect
-flunk 考试不及格 <- failed a subject 
 sarcastic 讽刺的
 critical 至关重要的
-relieved 松了一口气
 armistice 停战协议
 aspect 方面 a key aspect 重要方面
 invader 入侵者
@@ -39,7 +36,6 @@ loan 贷款
 https://vjudge.net/problem/%E6%B4%9B%E8%B0%B7-P2871 01 背包问题
 同伦类型论
 [P1115 最大子段和](https://www.luogu.com.cn/problem/P1115)
-1e3 一千
 链式前向星
 多边形对角线的交点的个数公式 `n * (n - 1) / 2 * (n - 2) / 3 * (n - 3) / 4`
 
