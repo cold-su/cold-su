@@ -2,6 +2,7 @@
 using namespace std;
 
 #define println(...) puts(format(__VA_ARGS__).c_str())
+#define int long long int
 
 const static auto init = [] {
     std::ios::sync_with_stdio(false);
@@ -13,7 +14,7 @@ const static auto init = [] {
 void solve() {
 }
 
-int main() {
+signed main() {
     solve();
     return 0;
 }
