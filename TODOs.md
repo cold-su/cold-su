@@ -38,6 +38,7 @@ https://vjudge.net/problem/%E6%B4%9B%E8%B0%B7-P2871 01 背包问题
 [P1115 最大子段和](https://www.luogu.com.cn/problem/P1115)
 链式前向星
 多边形对角线的交点的个数公式 `n * (n - 1) / 2 * (n - 2) / 3 * (n - 3) / 4`
+梅森增益公式
 
 ## 前置概念
 
