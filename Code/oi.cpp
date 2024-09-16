@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
-using namespace std;
 
-#define println(...) puts(format(__VA_ARGS__).c_str())
+#define println(...) std::puts(std::format(__VA_ARGS__).c_str())
 #define int long long int
 
 const static auto init = [] {
@@ -9,7 +8,8 @@ const static auto init = [] {
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
     return nullptr;
-} ();
+}
+();
 
 void solve() {
 }
