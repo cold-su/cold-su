@@ -18,3 +18,4 @@ __pycache__/
 *.zip
 *.7z
 *.code-workspace
+*.lnk
