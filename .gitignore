@@ -19,3 +19,4 @@ __pycache__/
 *.7z
 *.code-workspace
 *.lnk
+*.pdb
