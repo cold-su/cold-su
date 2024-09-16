@@ -4,42 +4,8 @@
 
 | 帕秋莉的每日手记
 --
-https://codeforces.com/problemset/problem/1997/A 答案 https://codeforces.com/blog/entry/132154
-https://codeforces.com/problemset/submission/1891/277804567
-https://codeforces.com/problemset/problem/2004/B
-[一口气学完图论](https://www.bilibili.com/video/BV1aE4m1R79t/)
-认识部分匹配函数
-认识AC自动机
-C++实现 KMP匹配算法 可用的例题：https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
-[How computer processors run conditions and loops](https://www.youtube.com/watch?v=Ui6QyzcD3_E)
-have all everything ready -> got all the bases covered
-person in the car not the driver
-stand sb up -> blew(blow) sb off
-`std::rotate();`
-https://www.bilibili.com/video/BV1aE4m1R79t/
-treaty（国家之间的）条约
-commemorate 纪念 to remember with respect
-sarcastic 讽刺的
-critical 至关重要的
-armistice 停战协议
-aspect 方面 a key aspect 重要方面
-invader 入侵者
-sacrifice 牺牲
-cenotaph 纪念碑
-screwed 完蛋了
-insurance 保险
-multiplier 乘数
-loan 贷款
-求和 [∑：求和符号保姆级教学！](https://www.bilibili.com/video/BV1gb4y167Ma/)
-[配置SSH连接Git教程](https://www.cnblogs.com/OnlyAR/p/16155406.html)
-台阶问题 洛谷 - P1192 （与等比数列和取模有关的）
-https://vjudge.net/problem/%E6%B4%9B%E8%B0%B7-P2871 01 背包问题
-同伦类型论
-[P1115 最大子段和](https://www.luogu.com.cn/problem/P1115)
-链式前向星
-多边形对角线的交点的个数公式 `n * (n - 1) / 2 * (n - 2) / 3 * (n - 3) / 4`
-梅森增益公式
-Trapezoids 梯形
+理解并实现二分查找
+KMP算法
 
 ## 年度计划
 
