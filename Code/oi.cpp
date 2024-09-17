@@ -11,13 +11,13 @@ const static auto INIT = [] {
 }
 ();
 
-const bool MULTIPLE_TESTCASES = false;
+const bool HAVE_MULTIPLE_TESTCASES = false;
 
 void solve() {
 }
 
 signed main() {
-    if (MULTIPLE_TESTCASES) {
+    if (HAVE_MULTIPLE_TESTCASES) {
         int t;
         std::cin >> t;
         while (t--) { solve(); }
