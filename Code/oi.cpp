@@ -11,9 +11,33 @@ const static auto INIT = [] {
 }
 ();
 
+/* DECLARE FUNCTIONS */
+
+void solve();
+void cat(std::vector<int> nums);
+void __cat(std::vector<std::vector<int>> matrix);
+signed main();
+
+/* MY SOLUTION */
+
 const bool HAVE_MULTIPLE_TESTCASES = false;
 
 void solve() {
+}
+
+/* TEMPLATE -BEGIN */
+
+void cat(std::vector<int> nums) {
+    for (int i : nums)
+        std::cout << i << " ";
+}
+
+void __cat(std::vector<std::vector<int>> matrix) {
+    for (std::vector<int> i : matrix) {
+        for (int j : i)
+            std::cout << j << " ";
+        std::cout << "\n";
+    }
 }
 
 signed main() {
