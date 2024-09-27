@@ -29,7 +29,7 @@ const bool HAVE_MULTIPLE_TESTCASES = false;
 void solve() {
 }
 
-/* TEMPLATE -BEGIN */
+/* TEMPLATE -BEGIN- */
 
 int max(std::vector<int> nums) {
     return *std::max_element(nums.begin(), nums.end());
