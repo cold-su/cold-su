@@ -14,6 +14,7 @@ const static auto INIT = [] {
 /* DECLARE FUNCTIONS */
 
 void solve();
+void print_with_prec(double num, int precision);
 int max(std::vector<int> nums);
 int min(std::vector<int> nums);
 void combine(std::vector<int> nums1, std::vector<int> nums2);
@@ -30,6 +31,9 @@ void solve() {
 }
 
 /* TEMPLATE -BEGIN- */
+void print_with_prec(double num, int precision) {
+    std::cout << std::fixed << std::setprecision(precision) << num << " ";
+}
 
 int max(std::vector<int> nums) {
     return *std::max_element(nums.begin(), nums.end());
