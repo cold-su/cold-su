@@ -14,6 +14,7 @@ const static auto INIT = [] {
 /* DECLARE FUNCTIONS */
 
 void solve();
+void combine(std::vector<int> nums1, std::vector<int> nums2);
 void cat(std::vector<int> nums);
 void __cat(std::vector<std::vector<int>> matrix);
 signed main();
@@ -26,6 +27,12 @@ void solve() {
 }
 
 /* TEMPLATE -BEGIN */
+
+void combine(std::vector<int> nums1, std::vector<int> nums2) {
+    for (int i = 0; i < nums2.size(); i++) {
+        nums1.push_back(nums2[i]);
+    }
+}
 
 void cat(std::vector<int> nums) {
     for (int i : nums)
