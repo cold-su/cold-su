@@ -2,6 +2,8 @@
 
 #define println(...) std::puts(std::format(__VA_ARGS__).c_str())
 #define int long long int
+#define _vec std::vector
+#define wire std::string
 
 const static auto INIT = [] {
     std::ios::sync_with_stdio(false);
@@ -55,6 +57,7 @@ void view(int num) {
 void cat(std::vector<int> nums) {
     for (int i : nums)
         view(i);
+    std::cout << "\n";
 }
 
 void __cat(std::vector<std::vector<int>> matrix) {
@@ -62,6 +65,7 @@ void __cat(std::vector<std::vector<int>> matrix) {
         cat(nums);
         std::cout << "\n";
     }
+    std::cout << "\n";
 }
 
 signed main() {
