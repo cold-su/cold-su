@@ -15,7 +15,7 @@ bool is_prime(int num) {
         if (num % i == 0)
             return false;
     }
-    return true;
+    return num < 2 ? false : true;
 }
 
 void solve() {
