@@ -10,8 +10,6 @@ const static auto INIT = [] {
     return 0;
 } ();
 
-/* MY SOLUTION */
-
 const bool HAVE_MULTIPLE_TESTCASES = false;
 
 void solve() {
