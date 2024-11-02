@@ -1,0 +1,3 @@
+[submodule "notes.git"]
+	path = notes
+	url = https://github.com/cold-su/notes.git
