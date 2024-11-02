@@ -1,3 +1,6 @@
 [submodule "notes.git"]
 	path = notes
 	url = https://github.com/cold-su/notes.git
+[submodule "windering-tokicho.git"]
+	path = windering-tokicho
+	url = https://github.com/cold-su/windering-tokicho.git
