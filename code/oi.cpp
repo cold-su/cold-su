@@ -19,7 +19,8 @@ signed main() {
 	if (HAVE_MULTIPLE_TESTCASES) {
 		int t;
 		std::cin >> t;
-		while (t--) { solve(); }
+		while (t--)
+			solve();
 	} else solve();
 	return 0;
 }
