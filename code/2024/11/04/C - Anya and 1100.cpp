@@ -44,6 +44,10 @@ void solve() {
 	}
 }
 
+/*
+
+// Nice solotion to learn!
+
 void solve() {
 	std::string s;
 	std::cin >> s;
@@ -74,6 +78,8 @@ void solve() {
 		std::cout << (ans ? "YES" : "NO") << "\n";
 	}
 }
+
+*/
 
 signed main() {
 	std::ios::sync_with_stdio(false);
