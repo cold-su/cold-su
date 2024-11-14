@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-#define println(...) puts(std::format(__VA_ARGS__).c_str())
+#define deb(...) puts(std::format(__VA_ARGS__).c_str())
 #define int long long int
 
 const bool HAVE_MULTIPLE_TESTCASES = false;
