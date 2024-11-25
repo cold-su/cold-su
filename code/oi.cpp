@@ -11,7 +11,6 @@ void solve() {
 signed main() {
 	std::ios::sync_with_stdio(false);
 	std::cin.tie(nullptr);
-	std::cout.tie(nullptr);
 	if (HAVE_MULTIPLE_TESTCASES) {
 		int t;
 		std::cin >> t;
