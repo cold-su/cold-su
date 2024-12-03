@@ -9,8 +9,8 @@ void solve() {
 }
 
 signed main() {
-	std::ios::sync_with_stdio(false);
-	std::cin.tie(nullptr);
+	std::ios::sync_with_stdio(0);
+	std::cin.tie(0);
 	if (HAVE_MULTIPLE_TESTCASES) {
 		int t;
 		std::cin >> t;
