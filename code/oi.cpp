@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 
-#define deb(...) puts(std::format(__VA_ARGS__).c_str())
-#define int long long int
-
+#define deb(...) std::cerr << std::format(__VA_ARGS__) << "\n";
+#ifdef ONLINE_JUDGE
+#define deb(...) 0
+#endif
 const bool HAVE_MULTIPLE_TESTCASES = false;
+#define int long long int
 
 void solve() {
 }
