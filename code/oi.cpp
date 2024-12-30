@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-const bool HAVE_MULTIPLE_TESTCASES = false;
+const bool MULTI = false;
 #define int long long int
 
 void solve() {
@@ -9,7 +9,7 @@ void solve() {
 signed main() {
 	std::ios::sync_with_stdio(0);
 	std::cin.tie(0);
-	if (HAVE_MULTIPLE_TESTCASES) {
+	if (MULTI) {
 		int t;
 		std::cin >> t;
 		while (t--)
