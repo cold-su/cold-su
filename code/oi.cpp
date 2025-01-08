@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 const bool MULTI = false;
+using namespace std;
 #define int long long int
 
 void solve() {
