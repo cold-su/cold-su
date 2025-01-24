@@ -13,8 +13,7 @@ void solve() {
 		}
 	}
 	int ans = 0;
-	int m = nums.size();
-	for (int i = std::min(3, m); i < m; i++) {
+	for (int i = 3; i < nums.size(); i++) {
 		ans += nums[i - 2] > nums[i - 1] and nums[i - 1] < nums[i];
 	}
 	std::cout << ans;
