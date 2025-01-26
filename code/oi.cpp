@@ -1,17 +1,7 @@
 #include <bits/stdc++.h>
-const bool MULTI = false;
 
-void solve() {
-}
-
-signed main() {
+int main() {
 	std::ios::sync_with_stdio(0);
 	std::cin.tie(0);
-	if (MULTI) {
-		int t;
-		std::cin >> t;
-		while (t--)
-			solve();
-	} else solve();
 	return 0;
 }
