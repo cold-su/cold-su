@@ -1,8 +1,9 @@
+// 空间、时间优化
 class Solution {
   public:
-	int numPairsDivisibleBy60(vector<int>& a) {
-		int ans = 0;
-		int u = 60;
+	long long countCompleteDayPairs(vector<int>& a) {
+		unsigned long long ans = 0;
+		int u = 24;
 		std::vector<int> f(u);
 		for (int &x : a) {
 			x %= u;
@@ -12,15 +13,17 @@ class Solution {
 		return ans;
 	}
 };
+
 /*
 class Solution {
   public:
-	int numPairsDivisibleBy60(vector<int>& a) {
+	long long countCompleteDayPairs(vector<int>& a) {
+		unsigned long long ans = 0;
 		std::map<int, int> map;
-		int ans = 0;
+		int u = 24;
 		for (int &x : a) {
-			x %= 60;
-			ans += map[(60 - x) % 60];
+			x %= u;
+			ans += map[(u - x) % u];
 			map[x]++;
 		}
 		return ans;
