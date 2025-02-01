@@ -7,6 +7,7 @@ auto is = [] (char c) {
 	return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
 };
 char f = '\r';
+
 class Solution {
   public:
 	string reverseVowels(string s) {
