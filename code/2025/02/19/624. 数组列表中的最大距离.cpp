@@ -9,9 +9,7 @@ public:
 				max = a[i].back();
 				continue;
 			}
-			for (int x : a[i]) {
-				ans = std::max({max - a[i].front(), a[i].back() - min, ans});
-			}
+			ans = std::max({max - a[i].front(), a[i].back() - min, ans});
 			min = std::min(min, a[i].front());
 			max = std::max(max, a[i].back());
 		}
