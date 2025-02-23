@@ -23,7 +23,7 @@ public:
 
 	std::vector<std::string> take() {
 		std::vector<std::string> ans;
-		while (check() and a[p].size() != 0) {
+		while (check()) {
 			ans.push_back(a[p]);
 			p++;
 		}
