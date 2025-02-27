@@ -1,51 +1,41 @@
 class TextEditor {
 public:
-	std::vector<char> p, r;
+	std::string p, r;
 	TextEditor() {
 
 	}
 
 	void addText(string text) {
-		for (char c : text) {
-			p.push_back(c);
-		}
+		p += text;
 	}
 
 	int deleteText(int k) {
 		int cnt = 0;
-		while (!p.empty() and k) {
+		while (!p.empty() and k--) {
 			p.pop_back();
-			k--, cnt++;
+			cnt++;
 		}
 		return cnt;
 	}
 
 	string cursorLeft(int k) {
-		while (!p.empty() and k) {
-			r.push_back(p.back());
+		while (!p.empty() and k--) {
+			r += p.back();
 			p.pop_back();
-			k--;
 		}
-		return get();
+		return left();
 	}
 
 	string cursorRight(int k) {
-		while (!r.empty() and k) {
-			p.push_back(r.back());
+		while (!r.empty() and k--) {
+			p += r.back();
 			r.pop_back();
-			k--;
 		}
-		return get();
+		return left();
 	}
 
-	std::string get() {
-		std::string ans {};
-		int i = 0, n = p.size();
-		i = std::max(i, n - 10);
-		for (; i < p.size(); i++) {
-			ans += p[i];
-		}
-		return ans;
+	std::string left() {
+		return p.substr(std::max((int) p.size() - 10, 0));
 	}
 };
 
