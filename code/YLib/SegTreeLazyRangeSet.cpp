@@ -1,5 +1,5 @@
 template <typename T>
-class SegTreeLazyRangeSet {
+class segtree {
 	std::vector<T> tree, lazy;
 	std::vector<T> *arr;
 	std::vector<bool> ifLazy;

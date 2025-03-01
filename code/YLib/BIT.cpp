@@ -1,11 +1,11 @@
 // A simple BIT implementation.
 // from https://oi-wiki.org/math/permutation/#__tabbed_1_2
-class BIT {
+class bit {
 	int n;
 	std::vector<int> su;
 
-  public:
-	BIT(int n) : n(n), su(n + 1) {}
+public:
+	bit(int n) : n(n), su(n + 1) {}
 
 	// Add v to the x-th number.
 	void add(int x, int v) {
