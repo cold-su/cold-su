@@ -20,20 +20,12 @@ class Solution {
 		return s.substr(x.first, x.second - x.first + 1);
 	}
 
-	// void dbg(p x) {
-	// 	std::cout << std::format(" ({}, {}) ", x.first, x.second);
-	// }
-
 public:
 	string longestPalindrome(string s) {
 		this->s = s;
 		int n = s.size();
 		std::vector<p> f(n + 1);
 		for (int i = 0; i < n; i++) {
-			// for (auto x : f) {
-			// 	dbg(x);
-			// }
-			// std::cout << "\n";
 			std::vector<p> nf(n + 1);
 			for (int j = i; j < n; j++) {
 				if (is(i, j)) {
