@@ -3,7 +3,9 @@
 class Solution {
 public:
 	Solution() {}
+
 	void solve() {}
+
 };
 
 int main() {
