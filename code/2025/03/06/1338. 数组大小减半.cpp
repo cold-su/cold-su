@@ -11,12 +11,9 @@ public:
 		});
 		int n = arr.size(), half = n / 2, tot = n;
 		int i = 0;
-		for (; i < n; i++) {
+		for (; i < n and tot > half; i++) {
 			tot -= a[i].second;
-			if (tot <= half) {
-				break;
-			}
 		}
-		return i + 1;
+		return i;
 	}
 };
