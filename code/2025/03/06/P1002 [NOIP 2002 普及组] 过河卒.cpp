@@ -1,23 +1,16 @@
 #include <bits/stdc++.h>
 
 class Solution {
-	std::vector<std::pair<int, int>> a;
-	using int64 = long long;
 public:
 	Solution() {}
+
+	std::vector<std::pair<int, int>> a;
+	using int64 = long long;
 
 	void solve() {
 		int xb, yb, xh, yh;
 		std::cin >> xb >> yb >> xh >> yh;
-		a.emplace_back(xh - 2, yh - 1);
-		a.emplace_back(xh - 2, yh + 1);
-		a.emplace_back(xh + 2, yh - 1);
-		a.emplace_back(xh + 2, yh + 1);
-		a.emplace_back(xh - 1, yh - 2);
-		a.emplace_back(xh - 1, yh + 2);
-		a.emplace_back(xh + 1, yh - 2);
-		a.emplace_back(xh + 1, yh + 2);
-		a.emplace_back(xh, yh);
+		push(xh, yh);
 		xb++, yb++, xh++, yh++;
 		std::vector<int64> f(yb);
 		f[0] = 1;
@@ -36,6 +29,18 @@ public:
 			f = nf;
 		}
 		std::cout << f.back();
+	}
+
+	void push(int xh, int yh) {
+		a.emplace_back(xh - 2, yh - 1);
+		a.emplace_back(xh - 2, yh + 1);
+		a.emplace_back(xh + 2, yh - 1);
+		a.emplace_back(xh + 2, yh + 1);
+		a.emplace_back(xh - 1, yh - 2);
+		a.emplace_back(xh - 1, yh + 2);
+		a.emplace_back(xh + 1, yh - 2);
+		a.emplace_back(xh + 1, yh + 2);
+		a.emplace_back(xh, yh);
 	}
 
 	bool on(int x, int y) {
