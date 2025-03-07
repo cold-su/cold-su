@@ -5,7 +5,6 @@ public:
 	Solution() {}
 
 	void solve() {}
-
 };
 
 int main() {
