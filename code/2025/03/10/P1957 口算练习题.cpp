@@ -22,11 +22,11 @@ public:
 				} else {
 					ans = a * b;
 				}
-				auto p = std::format("{}{}{}={}", a, op == "a" || op == "b" ? op == "a" ? "+" : "-" : "*", b, ans);
+				auto p = std::format("{}{}{}={}", a, op == "a" or op == "b" ? op == "a" ? "+" : "-" : "*", b, ans);
 				std::cout << p << "\n" << p.size() << "\n";
 			};
 			std::string a, b;
-			if (op.size() != 1) {
+			if (op != "a" and op != "b" and op != "c") {
 				a = op;
 				op = bak;
 				std::cin >> b;
