@@ -30,10 +30,7 @@ public:
 	}
 
 	int& operator[](int i) {
-		if (i >= vec.size()) {
-			throw std::out_of_range("");
-		}
 		shrink();
-		return vec[i];
+		return vec.at(i);
 	}
 };
