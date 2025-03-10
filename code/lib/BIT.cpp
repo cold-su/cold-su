@@ -1,22 +1,21 @@
-// A simple BIT implementation.
-// from https://oi-wiki.org/math/permutation/#__tabbed_1_2
+template <typename T>
 class bit {
 	int n;
-	std::vector<int> su;
+	std::vector<T> su;
 
 public:
-	bit(int n) : n(n), su(n + 1) {}
+	explicit bit<T>(int n) : n(n), su(n + 1) {}
 
 	// Add v to the x-th number.
-	void add(int x, int v) {
+	void add(int x, T v) {
 		for (; x <= n; x += x & (-x)) {
 			su[x] += v;
 		}
 	}
 
 	// Get the cumulative sum till the x-th number.
-	int query(int x) {
-		int res = 0;
+	T query(int x) {
+		T res {};
 		for (; x; x &= x - 1) {
 			res += su[x];
 		}
