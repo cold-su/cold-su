@@ -12,8 +12,7 @@ public:
 			std::cin >> a[i];
 		}
 		int ans = 0;
-		std::set<std::pair<int, int>> vis;
-		auto dfs = [&](auto & self, int i, int j, int p, bool left = true) {
+		auto dfs = [&](auto & self, int i, int j, int p, bool is_left = true) {
 			if (not (0 <= i and i < r) or not (0 <= j and j < c)) {
 				return;
 			}
@@ -24,10 +23,10 @@ public:
 				ans++;
 				return;
 			}
-			if (left) {
-				self(self, i + 1, j, p + 1, left);
+			if (is_left) {
+				self(self, i + 1, j, p + 1, is_left);
 			} else {
-				self(self, i, j - 1, p + 1, left);
+				self(self, i, j - 1, p + 1, is_left);
 			}
 		};
 		for (int i = 0; i < r; i++) {
