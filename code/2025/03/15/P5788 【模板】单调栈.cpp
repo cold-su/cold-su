@@ -10,13 +10,10 @@ public:
 		return d.empty();
 	}
 
-	void update_by(T val) {
+	void push(T val, int i) {
 		while (not d.empty() and d.back().first <= val) {
 			d.pop_back();
 		}
-	}
-
-	void push(T val, int i) {
 		d.push_back({val, i});
 	}
 
@@ -33,18 +30,19 @@ class Solution {
 public:
 	Solution() {}
 
-	using u64 = unsigned long long;
 	void solve() {
 		int n;
 		std::cin >> n;
-		std::vector<u64> a(n);
-		monostack<u64> s;
+		std::vector<int> a(n);
 		for (int i = 0; i < n; i++) {
 			std::cin >> a[i];
 		}
+		monostack<int> s;
 		std::vector<int> ans(n);
 		for (size_t i = n; i--;) {
-			s.update_by(a[i]);
+			while (not s.empty() and s.top().first <= a[i]) {
+				s.pop();
+			}
 			ans[i] = not s.empty() ? s.top().second : 0;
 			s.push(a[i], i + 1);
 		}
