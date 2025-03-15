@@ -14,7 +14,7 @@ class discrete {
 public:
 	explicit discrete<T>() {}
 
-	void add(T v) {
+	void push(T v) {
 		vec.push_back(v);
 		unique = false;
 	}

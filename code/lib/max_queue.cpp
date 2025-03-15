@@ -3,7 +3,7 @@ class max_queue {
 public:
 	max_queue() {}
 
-	void add(int x) {
+	void push(int x) {
 		while (not d.empty() and d.back() < x) {
 			d.pop_back();
 		}

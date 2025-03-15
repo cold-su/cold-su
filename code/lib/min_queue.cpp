@@ -3,7 +3,7 @@ class min_queue {
 public:
 	min_queue() {}
 
-	void add(int x) {
+	void push(int x) {
 		while (not d.empty() and d.back() > x) {
 			d.pop_back();
 		}

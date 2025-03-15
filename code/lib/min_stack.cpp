@@ -16,7 +16,7 @@ public:
 		return st.top().first;
 	}
 
-	int getMin() {
+	int min() {
 		return st.top().second;
 	}
 };
