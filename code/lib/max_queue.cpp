@@ -1,7 +1,7 @@
-class queue {
+class max_queue {
 	std::deque<int> d;
 public:
-	queue() {}
+	max_queue() {}
 
 	void add(int x) {
 		while (not d.empty() and d.back() < x) {
