@@ -3,7 +3,7 @@ class monoqueue {
 	/* (value, idx) */
 	std::deque<std::pair<T, int>> d;
 public:
-	explicit max_queue<T, Compare>() {}
+	explicit monoqueue<T, Compare>() {}
 
 	bool empty() {
 		return d.empty();
