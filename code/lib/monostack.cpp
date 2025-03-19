@@ -13,7 +13,7 @@ public:
 		while (not d.empty() and Compare{}(d.back().first, val)) {
 			d.pop_back();
 		}
-		d.emplace_back(val, i);
+		d.push_back(std::pair{val, i});
 	}
 
 	void pop() {
