@@ -16,7 +16,7 @@ public:
 		d.empalce_back(val, i);
 	}
 
-	void del(T val) {
+	void erase(T val) {
 		if (not d.empty() and d.front().first == val) {
 			d.pop_front();
 		}
