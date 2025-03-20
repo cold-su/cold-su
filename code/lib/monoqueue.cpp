@@ -19,12 +19,12 @@ public:
 	}
 
 	void erase(T val) {
-		if (not d.empty() and d.front().first == val) {
-			d.pop_front();
+		if (not d.empty() and d.back().first == val) {
+			d.pop_back();
 		}
 	}
 
 	std::pair<T, int> top() {
-		return d.front();
+		return d.back();
 	}
 };
