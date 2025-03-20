@@ -1,9 +1,8 @@
 template <class T,
-          class Container = std::deque<std::pair<T, int>>/*(value, index)*/,
           class Compare = std::less<T>>
 class monostack {
 protected:
-	Container d;
+	std::deque<std::pair<T, int>/*(value, index)*/> d;
 public:
 	explicit monostack<T, Compare>() {}
 
