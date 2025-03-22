@@ -1,17 +1,11 @@
 class Solution {
 public:
 	vector<int> rowAndMaximumOnes(vector<vector<int>>& a) {
-		std::vector<std::vector<int>> b;
+		std::map<int, int> map;
 		int n = a.size();
 		for (int i = 0; i < n; i++) {
-			b.push_back({i, (int) std::count(a[i].begin(), a[i].end(), 1)});
+			map.insert(std::make_pair(-std::count(a[i].begin(), a[i].end(), 1), i));
 		}
-		std::sort(b.begin(), b.end(), [](auto & l, auto & r) {
-			if (l[1] == r[1]) {
-				return l[0] < r[0];
-			}
-			return l[1] > r[1];
-		});
-		return b.front();
+		return {map.begin()->second, -map.begin()->first};
 	}
 };
