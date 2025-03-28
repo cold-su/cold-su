@@ -6,7 +6,7 @@ class Solution:
 				ans *= i
 			return ans
 		def C(n, m):
-			return f(n) / (f(m) *  f(n - m))
+			return f(n) / (f(m) * f(n - m))
 		ans = []
 		for i in range(0, rowIndex + 1):
 			ans.append(int(C(rowIndex, i)))
