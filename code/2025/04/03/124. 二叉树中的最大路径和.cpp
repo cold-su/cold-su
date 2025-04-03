@@ -20,16 +20,10 @@ public:
 		if (not r) {
 			return {0, 0};
 		}
-		int L = max(dfs(r->left));
-		int R = max(dfs(r->right));
-		ans = std::max({
-			ans,
-			r->val,
-			L + R + r->val,
-			L + r->val,
-			R + r->val
-		});
-		return {std::max(r->val, L + r->val), std::max(r->val, R + r->val)};
+		int L = std::max(max(dfs(r->left)), 0);
+		int R = std::max(max(dfs(r->right)), 0);
+		ans = std::max(ans, L + R + r->val);
+		return {L + r->val, R + r->val};
 	}
 	int max(std::pair<int, int> x) {
 		return std::max(x.first, x.second);
