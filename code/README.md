@@ -10,10 +10,16 @@
 
 ## 如何找到某个题目？
 
-用 Sublime text 打开文件夹，Ctrl + p 打开控制台，输入题目名称。
+用 `Sublime text` 打开文件夹，`Ctrl + p` 打开控制台，输入题目名称。
 
-例如：
+**实例 1：**
 
-按下 Ctrl + p 然后输入 `dist max`
+按下 Ctrl + p 然后输入 `dist max`，根据题目信息检索。
 
 ![sample](./sample_screenshot.png)
+
+**实例 2：**
+
+按下 Ctrl + p 然后输入 `124`，根据力扣题号（或者其他题目的数字信息）检索。
+
+![sample_2](./sample_screenshot_2.png)
