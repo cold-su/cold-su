@@ -9,21 +9,18 @@
  */
 class Solution {
 public:
-	TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-		return dfs(root, p, q);
-	}
-	TreeNode* dfs(TreeNode* r, TreeNode* p, TreeNode* q) {
+	TreeNode* lowestCommonAncestor(TreeNode* r, TreeNode* p, TreeNode* q) {
 		if (not r or isSameTree(r, p) or isSameTree(r, q)) {
 			return r;
 		}
-		auto L = dfs(r->left, p, q), R = dfs(r->right, p, q);
+		auto L = lowestCommonAncestor(r->left, p, q), R = lowestCommonAncestor(r->right, p, q);
 		if (L and R) {
 			return r;
-		} else if (L) {
-			return L;
-		} else {
-			return R;
 		}
+		if (L) {
+			return L;
+		}
+		return R;
 	}
 	bool isSameTree(TreeNode* p, TreeNode* q) {
 		if (not p and not q) {
