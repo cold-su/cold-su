@@ -9,17 +9,15 @@ class Solution:
         if r is None:
             return []
         ans = []
-        cur = [r]
-        while cur:
-            nxt = []
+        q = deque([r])
+        while q:
             vals = []
-            for node in cur:
+            for _ in range(len(q)):
+                node = q.popleft()
                 vals.append(node.val)
                 if node.left:
-                    nxt.append(node.left)
+                    q.append(node.left)
                 if node.right:
-                    nxt.append(node.right)
-            cur = nxt
+                    q.append(node.right)
             ans.append(vals)
         return ans
-
