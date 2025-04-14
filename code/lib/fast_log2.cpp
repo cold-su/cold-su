@@ -1,0 +1,1 @@
+size_t fast_log2(size_t x) { return 63 - __builtin_clzll(x); }
