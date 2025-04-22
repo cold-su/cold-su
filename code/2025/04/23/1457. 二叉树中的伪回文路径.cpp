@@ -12,7 +12,7 @@
 class Solution {
 public:
 	int ans = 0;
-	int pseudoPalindromicPaths (TreeNode* root) {
+	int pseudoPalindromicPaths(TreeNode* root) {
 		dfs(root, 0);
 		return ans;
 	}
