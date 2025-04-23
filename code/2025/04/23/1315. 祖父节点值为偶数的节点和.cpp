@@ -11,22 +11,16 @@
  */
 class Solution {
 public:
-	int ans = 0;
-	int sumEvenGrandparent(TreeNode* root) {
-		dfs(root);
-		return ans;
-	}
-	std::deque<int> p;
-	void dfs(TreeNode* r) {
-		if (!r) {
-			return;
+	int sumEvenGrandparent(TreeNode* root, int father = -1, int grand = -1) {
+		int res = 0;
+		if (!root) {
+			return res;
 		}
-		p.push_front(r->val);
-		if (p.size() >= 3 and p[2] % 2 == 0) {
-			ans += r->val;
+		if (grand % 2 == 0) {
+			res += root->val;
 		}
-		dfs(r->left);
-		dfs(r->right);
-		p.pop_front();
+		return res
+			+ sumEvenGrandparent(root->left, root->val, father)
+			+ sumEvenGrandparent(root->right, root->val, father);
 	}
 };
