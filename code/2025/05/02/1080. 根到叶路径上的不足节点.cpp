@@ -3,11 +3,11 @@ public:
 	TreeNode* sufficientSubset(TreeNode* root, int limit) {
 		auto dfs = [=](this auto& dfs, TreeNode* r, int p) -> TreeNode* {
 			if (!r) {
-				return NULL;
+				return nullptr;
 			}
 			int s = sum(r);
 			if (p + s < limit) {
-				return NULL;
+				return nullptr;
 			}
 			return new TreeNode(r->val, dfs(r->left, p + r->val), dfs(r->right, p + r->val));
 		};
