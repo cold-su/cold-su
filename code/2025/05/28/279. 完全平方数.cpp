@@ -11,7 +11,7 @@ public:
 				return res;
 			}
 			for (int y = 1; y <= sqrt(x); y++) {
-				if (x - y >= 0) {
+				if (x - y * y >= 0) { // why x - y >= 0 also works?
 					res = std::min(res, self(x - y * y) + 1);
 				}
 			}
