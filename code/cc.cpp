@@ -1,13 +1,9 @@
 #include <bits/stdc++.h>
 
-void
-solve()
-{
+void solve() {
 }
 
-int
-main()
-{
+int main() {
 	std::ios::sync_with_stdio(false);
 	std::cin.tie(nullptr);
 	int t = 1;
