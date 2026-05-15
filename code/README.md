@@ -14,16 +14,16 @@
 
 输入 `dist max`，根据题目信息检索.
 
-![sample](./sample_screenshot.png)
+![sample](./assets/sample_screenshot.png)
 
 **示例 2：**
 
 输入 `124`，根据力扣题号（或者其他题目的数字信息）检索。
 
-![sample_2](./sample_screenshot_2.png)
+![sample2](./assets/sample_screenshot_2.png)
 
 **示例 3：**
 
 输入 `周赛`，检索我的周赛提交存档.
 
-![sample_3](./sample_screenshot_3.png)
+![sample3](./assets/sample_screenshot_3.png)
