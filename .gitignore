@@ -1,15 +1,19 @@
+#以点开头的目录
 .vscode/
 .obsidian/
 .trash/
 .cph/
 .lcpr_data/
 
+# pycache
 __pycache__/
 
+#目录
 [Tt]arget/
 [Tt]ests/
 [Bb]uild/
 
+#文件
 */!*.*
 *.exe
 *.out
@@ -22,6 +26,7 @@ __pycache__/
 *.pdb
 *.ini
 
+#其他
 oi
 *tests
 main
