@@ -28,5 +28,5 @@ __pycache__/
 
 #其他
 oi
-*tests
+# *tests
 main
