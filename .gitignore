@@ -4,6 +4,7 @@
 .trash/
 .cph/
 .lcpr_data/
+node_modules/
 
 # pycache
 __pycache__/

@@ -8,8 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      // chapters live in the repo's agent/ folder, one level up
-      "@book": fileURLToPath(new URL("../agent", import.meta.url)),
+      // 章节存放在上一级的 note/ 里
+      "@book": fileURLToPath(new URL("../note", import.meta.url)),
     },
   },
   server: {
