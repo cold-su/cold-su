@@ -8,7 +8,7 @@ const PI_DIGITS = "3.14159265358979323846264338327950288";
   <main class="home">
     <!-- repo link, top-right — same ring vocabulary as the brand mark -->
     <a
-      href="https://github.com/antinomie-lab/pi-book"
+      href="https://github.com/cold-su/cold-su"
       class="repo-link"
       target="_blank"
       rel="noopener"
@@ -29,15 +29,15 @@ const PI_DIGITS = "3.14159265358979323846264338327950288";
     <div class="ring ring-4"></div>
 
     <section class="hero rise">
-      <p class="kicker">pi-agent-core · 源码导读</p>
+      <p class="kicker">cold-su 的随笔频道</p>
       <h1 class="title">
-        <span class="pi-glyph">π</span>-agent
+        <span class="pi-glyph">π</span>-voloume
         <em>book</em>
       </h1>
       <p class="lede">
-        它不是 LangChain。<br />
-        一个拒绝成为框架的 agent 循环。<br />
-        模块即积木，组合即架构。
+        欢迎翻开本书！<br />
+        这是一个我用于探索新鲜事物、记录小而可爱的想法的项目。<br />
+        我自己的虚拟宇宙即将铺展开。
       </p>
       <p class="digits" aria-hidden="true">{{ PI_DIGITS }}</p>
     </section>
@@ -65,7 +65,7 @@ const PI_DIGITS = "3.14159265358979323846264338327950288";
     </nav>
 
     <footer class="colophon">
-      <span>预览版 · 已收录 2 章 · 持续更新中</span>
+      <span>预览版 · 持续更新中</span>
     </footer>
   </main>
 </template>
