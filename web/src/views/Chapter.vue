@@ -2,15 +2,8 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import MarkdownIt from "markdown-it";
-import hljs from "highlight.js/lib/core";
-import typescript from "highlight.js/lib/languages/typescript";
-import json from "highlight.js/lib/languages/json";
-import bash from "highlight.js/lib/languages/bash";
+import hljs from 'highlight.js';
 import { chapters, getChapter } from "../chapters";
-
-hljs.registerLanguage("typescript", typescript);
-hljs.registerLanguage("json", json);
-hljs.registerLanguage("bash", bash);
 
 const md = new MarkdownIt({
   html: false,
