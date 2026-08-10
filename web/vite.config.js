@@ -8,8 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      // 章节存放在上一级的 note/ 里
-      "@book": fileURLToPath(new URL("../note", import.meta.url)),
+      // 章节存放在上一级的 volume/ 里
+      "@book": fileURLToPath(new URL("../volume", import.meta.url)),
     },
   },
   server: {

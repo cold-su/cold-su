@@ -31,13 +31,13 @@ const PI_DIGITS = "3.14159265358979323846264338327950288";
     <section class="hero rise">
       <p class="kicker">cold-su 的随笔频道</p>
       <h1 class="title">
-        <span class="pi-glyph">π</span>-voloume
+        <span class="pi-glyph">π</span>-volume
         <em>book</em>
       </h1>
       <p class="lede">
         欢迎翻开本书！<br />
         这是一个我用于探索新鲜事物、记录小而可爱的想法的项目。<br />
-        我自己的虚拟宇宙即将铺展开。
+        我自己的虚拟宇宙即将铺展开来。
       </p>
       <p class="digits" aria-hidden="true">{{ PI_DIGITS }}</p>
     </section>
