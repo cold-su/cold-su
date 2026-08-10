@@ -26,6 +26,7 @@ __pycache__/
 *.lnk
 *.pdb
 *.ini
+*.kate-swp
 
 #其他
 oi
