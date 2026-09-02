@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // ===== 配置 =====
-const ROOT_DIR = './volume';
+const ROOT_DIR = '.';
 const ROOT_ABS = path.resolve(ROOT_DIR);
 
 // MIME 类型映射（包含 charset=utf-8）
@@ -54,7 +54,6 @@ const MIME_TYPES = {
   // 音频类
   '.mp3': 'audio/mpeg',
   '.wav': 'audio/wav',
-  '.ogg': 'audio/ogg',
   '.flac': 'audio/flac',
   '.aac': 'audio/aac',
   '.m4a': 'audio/mp4',
@@ -208,6 +207,15 @@ function getIconByExt(ext) {
   return fileIcons[ext] || defaultFileIcon;
 }
 
+// HTML 转义函数
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+}
+
 // ===== HTTP 服务器 =====
 const server = http.createServer((req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
@@ -240,7 +248,6 @@ const server = http.createServer((req, res) => {
     }
 
     if (stats.isDirectory()) {
-      // 目录列表
       fs.readdir(targetPath, { withFileTypes: true }, (err, items) => {
         if (err) {
           res.statusCode = 500;
@@ -251,6 +258,21 @@ const server = http.createServer((req, res) => {
 
         const relPath = path.relative(ROOT_ABS, targetPath) || '';
         const title = `Index of ${relPath ? '/' + relPath.split(path.sep).join('/') : '/'}`;
+
+        // 尝试查找 README 文件
+        let readmeContent = '';
+        const readmeCandidates = ['readme.md', 'readme.txt', 'readme', 'readme.rst', 'readme.rdoc', 'readme.html'];
+        const readmeItem = items.find(i => !i.isDirectory() && readmeCandidates.includes(i.name.toLowerCase()));
+
+        if (readmeItem) {
+          try {
+            const readmePath = path.join(targetPath, readmeItem.name);
+            const data = fs.readFileSync(readmePath, 'utf8');
+            readmeContent = data.slice(0, 10000); // 限制显示前 10KB
+          } catch (e) {
+            // 忽略读取错误
+          }
+        }
 
         let html = `<!DOCTYPE html>
 <html>
@@ -266,7 +288,13 @@ const server = http.createServer((req, res) => {
     a:hover { text-decoration: underline; }
   </style>
 </head>
-<body>
+<body>`;
+
+        if (readmeContent) {
+          html += `<pre>${escapeHtml(readmeContent)}</pre>`;
+        }
+
+        html += `
   <h1>${title}</h1>
   <table>
     <tr>
@@ -277,6 +305,7 @@ const server = http.createServer((req, res) => {
     </tr>
     <tr><td colspan="4"><hr></td></tr>`;
 
+        // 父目录链接
         if (relPath !== '') {
           const parentRel = path.dirname(relPath);
           const parentUrl = parentRel === '.' ? '/' : '/' + parentRel.split(path.sep).join('/');
