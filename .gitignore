@@ -1,10 +1,14 @@
+# 忽略所有不带扩展名的文件
+**
+!**/
+!**/*.*
+
 #以点开头的目录
 .vscode/
 .obsidian/
 .trash/
 .cph/
 .lcpr_data/
-node_modules/
 
 # pycache
 __pycache__/
@@ -13,9 +17,9 @@ __pycache__/
 [Tt]arget/
 [Tt]ests/
 [Bb]uild/
+node_modules/
 
 #文件
-*/!*.*
 *.exe
 *.out
 *.o
