@@ -1,3 +1,5 @@
+/* 本文件由 DeepSeek V4 生成 */
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
