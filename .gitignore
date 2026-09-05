@@ -19,6 +19,7 @@ __pycache__/
 *.exe
 *.out
 *.o
+*.a
 *.prob
 *.zip
 *.7z
